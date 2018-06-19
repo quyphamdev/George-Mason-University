@@ -1,0 +1,7 @@
+fsamp = 11025;
+xx1 = bell([110,220],10,2,6,11025);
+tt1 = 0:(1/fsamp):6;
+At1 = bellenv(2,6,fsamp);
+xx6 = bell([250,350],3,1,5,11025);
+tt1 = 0:(1/fsamp):6;
+At1 = bellenv(2,6,fsamp);

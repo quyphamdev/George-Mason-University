@@ -1,0 +1,18 @@
+xx2=bell([220,440],5,2,6,11025);
+tt2=0:1/11025:6;
+xx6=bell([250,350],3,1,5,11025);
+tt6=0:1/11025:5;
+subplot(2,2,1);
+plot(tt2,xx2);
+xlabel('t');
+ylabel('x(t)');
+title('case 2');
+subplot(2,2,2);
+specgram(xx2, [], 11025);
+subplot(2,2,3);
+plot(tt6,xx6);
+xlabel('t');
+ylabel('x(t)');
+title('case 6');
+subplot(2,2,4);
+specgram(xx6, [], 11025);

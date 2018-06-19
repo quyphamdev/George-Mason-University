@@ -1,0 +1,29 @@
+%-----------------------------
+% Diary file
+%-----------------------------
+lab4
+Choose from the following menu:
+---Enter complex number in polar form (1)
+---Enter complex number in rectangular form (2)
+---End program(0)
+Type in your choice here:2
+First complex number C1 = x + jy
+Enter the real part x = 0.05
+Enter the imaginary part y = 0.5
+C1 = 0.05 + j0.5
+Second complex number C2 = x + jy
+Enter the real part x = 0.07
+Enter the imaginary part y = 0.4
+C2 = 0.07 + j0.4
+How do you want to show the phase in polar form ?
+--Degrees (1)
+--Radians (2)
+Choice(1,2)?: 1
+C1 has magnitude 0.50249 and phase 84.2894 degree.
+C2 has magnitude 0.40608 and phase 80.0738 degree.
+Choose from the following menu:
+---Enter complex number in polar form (1)
+---Enter complex number in rectangular form (2)
+---End program(0)
+Type in your choice here:0
+diary off

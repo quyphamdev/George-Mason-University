@@ -1,0 +1,17 @@
+fsamp = 11025;
+xx3 = bell([110,220],10,12,3,fsamp);
+xx4 = bell([110,220],10,0.3,3,fsamp);
+tt3 = 0:1/fsamp:3;
+tt4 = 0:1/fsamp:3;
+figure(1);
+plot(tt3,xx3);
+axis([1.5 1.51 -1 1]);
+xlabel('t');
+ylabel('x(t)');
+title('case 3');
+figure(2);
+plot(tt4,xx4);
+axis([1.49 1.51 -0.01 0.01]);
+xlabel('t');
+ylabel('x(t)');
+title('case 4');

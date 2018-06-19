@@ -1,0 +1,18 @@
+function plotfi(ff, Io, tau, dur, fsamp)
+%
+% usage:
+% 3. Ploting fi_t
+%
+%where: ff = frequency vector (containing fc and fm)
+%       Io = scale factor for modulation index
+%       tau = decay parameter for A(t)and I(t))
+%       dur = duration (in sec.) of the output signal
+%       fsamp = sampling rate
+fc = ff(1);
+fm = ff(2);
+tt = 0:(1/fsamp):dur;
+phi_m = -pi/2;
+At = bellenv(tau, dur, fsamp);
+It = Io*bellenv(tau, dur, fsamp);
+dI_t = (-Io/tau)*bellenv(tau, dur, fsamp);
+fi_t = fc - It*fm*sin(2*pi*fm*tt + phi_m) + 1/(2*pi)*dI_t*cos(2*pi*fm*tt + phi_m);
