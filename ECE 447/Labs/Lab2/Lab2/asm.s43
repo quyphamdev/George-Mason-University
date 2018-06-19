@@ -1,0 +1,184 @@
+//#include "msp430.h"                     ; #define controlled include file
+
+//constant and defines
+WDTCTL    EQU 0x0120 
+WDTSTP    EQU 0x5A80
+P1IN      EQU 0x0020 // buttons/switches
+P1DIR     EQU 0x0022
+P2IN      EQU 0x0028
+P2OUT     EQU 0x0029
+P2DIR     EQU 0x002A
+P6IN      EQU 0x0034
+P6OUT     EQU 0x0035
+P6DIR     EQU 0x0036
+
+PORT1_VECTOR  EQU (20 * 2u) 
+RESET_VECTOR  EQU (31 * 2u)
+P1IE          EQU 0x0025
+P1IFG         EQU 0x0023
+
+BIT0  EQU 0x01
+BIT1  EQU 0x02
+BIT2  EQU 0x04
+BIT3  EQU 0x08
+BIT4  EQU 0x10
+BIT5  EQU 0x20
+BIT6  EQU 0x40
+BIT7  EQU 0x80
+
+// 7 segments
+SEGA     EQU BIT0
+SEGB     EQU BIT1
+SEGC     EQU BIT2
+SEGD     EQU BIT3
+SEGE     EQU BIT4
+SEGF     EQU BIT5
+SEGG     EQU BIT6
+// numbers from 0-15
+//-AA-
+//F  B
+//-GG-
+//E  C
+//-DD-
+NUM0     EQU SEGA|SEGB|SEGC|SEGD|SEGE|SEGF//SEGA+SEGB+SEGC+SEGD+SEGE+SEGF
+NUM1     EQU SEGB|SEGC//SEGB+SEGC
+NUM2     EQU SEGA|SEGB|SEGD|SEGE|SEGG//SEGA+SEGB+SEGD+SEGE+SEGG
+NUM3     EQU SEGA|SEGB|SEGC|SEGD|SEGG//SEGA+SEGB+SEGC+SEGD+SEGG
+NUM4     EQU SEGB|SEGC|SEGF|SEGG//SEGB+SEGC+SEGF+SEGG
+NUM5     EQU SEGA|SEGC|SEGD|SEGF|SEGG//SEGA+SEGC+SEGD+SEGF+SEGG
+NUM6     EQU SEGA|SEGC|SEGD|SEGE|SEGF|SEGG//SEGA+SEGC+SEGD+SEGE+SEGF+SEGG
+NUM7     EQU SEGA|SEGB|SEGC//SEGA+SEGB+SEGC
+NUM8     EQU SEGA|SEGB|SEGC|SEGD|SEGE|SEGF|SEGG//SEGA+SEGB+SEGC+SEGD+SEGE+SEGF+SEGG
+NUM9     EQU SEGA|SEGB|SEGC|SEGD|SEGF|SEGG//SEGA+SEGB+SEGC+SEGD+SEGF+SEGG
+NUMA     EQU SEGA|SEGB|SEGC|SEGE|SEGF|SEGG//SEGA+SEGB+SEGC+SEGE+SEGF+SEGG
+NUMB     EQU SEGC|SEGD|SEGE|SEGF|SEGG
+NUMC     EQU SEGA|SEGD|SEGE|SEGF
+NUMD     EQU SEGB|SEGC|SEGD|SEGE|SEGG
+NUME     EQU SEGA|SEGD|SEGE|SEGF|SEGG
+NUMF     EQU SEGA|SEGE|SEGF|SEGG
+
+DELAY_FACTOR      EQU 0xFFFF
+DELAY_SEC     EQU 1
+COUNT_MIN     EQU 0
+COUNT_MAX     EQU 0xFF
+TRUE          EQU 0xFF
+FALSE         EQU 0
+
+
+        NAME    main                    ; module name
+
+        PUBLIC  main                    ; make the main label vissible
+                                        ; outside this module
+        ORG     0FFFEh
+        DC16    init                    ; set reset vector to 'init' label
+
+        RSEG    CSTACK                  ; pre-declaration of segment
+
+        RSEG    CODE                    ; place program in 'CODE' segment
+
+init:   MOV     #SFE(CSTACK), SP        ; set up stack
+
+main:                                ; main program
+    MOV.W   #WDTSTP,&WDTCTL
+    MOV.B   #0,&P1DIR
+    MOV.B   #0x7F,&P2DIR    
+    MOV.B   #0x7F,&P6DIR
+    
+    MOV.B   #COUNT_MIN,&count
+    MOV.B   #FALSE,&CountEn
+    MOV.B   #TRUE,&CountUpFlag
+    
+    BIS.B   #BIT0|BIT1,&P1IE
+    EINT
+    
+    LOOP:
+        CMP.B   #TRUE,&CountEn
+        JNZ     DISPLAY_NUM ;COUNT_NOT_EN
+        CMP.B   #TRUE,&CountUpFlag
+        JNZ     COUNT_DOWN
+    ;COUNT_UP:
+        MOV.B   &count,R4
+        CMP.B   #COUNT_MAX,R4
+        JHS     UP2DOWN
+        INC.B   &count
+        JMP     DISPLAY_NUM
+    UP2DOWN:
+        DEC.B   &count
+        MOV.B   #FALSE,&CountUpFlag
+        JMP     DISPLAY_NUM
+    COUNT_DOWN:
+        MOV     #COUNT_MIN,R4
+        CMP.B   &count,R4
+        JHS     DOWN2UP
+        DEC.B   &count
+        JMP     DISPLAY_NUM        
+    DOWN2UP:
+        INC.B   &count
+        MOV.B   #TRUE,&CountUpFlag
+
+    DISPLAY_NUM:
+        XOR     R4,R4
+        XOR     R5,R5
+        MOV.B   &count,R4
+        AND.B   #0x0F,R4
+        ADD     #nums,R4
+        MOV.B   0(R4),R5        
+        INV.B   R5
+        MOV.B   R5,&P2OUT
+        
+        XOR     R4,R4
+        XOR     R5,R5
+        MOV.B   &count,R4
+        AND.B   #0xF0,R4
+        RRA.B   R4
+        RRA.B   R4
+        RRA.B   R4
+        RRA.B   R4
+        AND.B   #01111111b,R4
+        ADD     #nums,R4
+        MOV.B   0(R4),R5        
+        INV.B   R5
+        MOV.B   R5,&P6OUT
+
+    INIT_DELAY:
+        MOV     #0,R4
+        MOV     #DELAY_SEC,R5
+    DELAY_LOOP:             
+        CMP.W   #DELAY_FACTOR,R4
+        JZ      CHECK_SEC
+        INC     R4
+        JMP     DELAY_LOOP
+    CHECK_SEC:
+        CMP.B   #0,R5
+        JZ      LOOP
+        DEC.B   R5               
+        JMP     DELAY_LOOP
+                
+;------------------------------------------------
+BTNPUSH_ISR:    
+    BIT.B   #BIT0,&P1IFG
+    JNZ     EN_BTN
+    BIT.B   #BIT1,&P1IFG
+    JNZ     SWITCH_COUNT  
+    JMP     RESET_IF
+  EN_BTN:
+    INV.B   &CountEn
+    JMP     RESET_IF
+  SWITCH_COUNT:
+    INV.B   &CountUpFlag
+  RESET_IF:
+    BIC.B   #BIT0|BIT1,&P1IFG
+    RETI
+;------------------------------------------------
+    RSEG    DATA16_C
+nums        DB  NUM0,NUM1,NUM2,NUM3,NUM4,NUM5,NUM6,NUM7,NUM8,NUM9,NUMA,NUMB,NUMC,NUMD,NUME,NUMF
+;------------------------------------------------
+    RSEG    DATA16_N
+count       DS  1
+CountEn     DS  1
+CountUpFlag DS  1
+;------------------------------------------------
+    COMMON  INTVEC
+    ORG     PORT1_VECTOR
+    DW      BTNPUSH_ISR
+    END
