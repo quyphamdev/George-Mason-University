@@ -1,0 +1,16 @@
+function [h,n] = fir_lpf(wc, M, winfxn)
+% Function to implement window design of lowpass filters
+% wc : cutoff frequency
+% M : integer that defines the length of the filter L = 2*M + 1
+% winfxn : a string which contains the name of the window function to use
+    n1 = -M:-1;
+    n2 = 1:M;
+    n0 = 0;
+    h_n1 = sin(wc*n1)./(pi*n1);
+    h_lhopital = wc*cos(wc*n0)/pi;
+    h_n2 = sin(wc*n2)./(pi*n2);
+    hlpf = [h_n1 h_lhopital h_n2];
+    n = [n1 n0 n2];
+    w = feval(winfxn,(M(i)*2+1));
+    h = window'.*hlpf;
+    plot(n, h);

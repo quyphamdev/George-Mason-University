@@ -1,0 +1,5 @@
+function [h, n] = highpass(wc, M, winfxn)
+    
+    [hlpf, n] = fir_lpf(wc, M, winfxn);
+    h = hlpf.*cos(pi*n);
+    

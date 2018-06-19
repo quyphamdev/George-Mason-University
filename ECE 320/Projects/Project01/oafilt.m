@@ -1,0 +1,37 @@
+function y = oafilt( h, x, L)
+
+if (L >= length(x))||(L < 0)
+    error('The input segment length should be positive and less than the input signal length');
+end
+% number of blocks
+blocks = ceil(length(x)/L);
+% duplicate signal x
+x_tmp = x;
+% block: y = conv(x,h).
+% length(y) = length(1 block) + length(h) - 1
+y = zeros(1,(L+(length(h)-1)));
+% process thru every blocks, except last block (it may not in length of L)
+for i=1:blocks
+    if length(x_tmp) < L % if this is the last block and its length is less than L
+        % then add zeros to the end of it to make its length = L
+        %x0 = [x_tmp zeros(1,(L-length(x_tmp)))];
+        x0 = x_tmp(1:end);
+    else % not the last block
+        % extract first blocks from the whole signal
+        x0 = x_tmp(1:L);
+    end
+    % trash first block, keep the rest
+    x_tmp = x_tmp((L+1):end);
+    % do convolution on the current block
+    y_tmp = conv(x0,h);
+    % shift y_tmp by L+1
+    y_tmp = [zeros(1,(i-1)*L) y_tmp];
+    % after shifted, length(y_tmp) changed
+    % y need to be in the same length as y_tmp in order to sum
+    y = [y zeros(1,(length(y_tmp)-length(y)))];
+    % sum up blocks
+    y = y + y_tmp;    
+end
+    
+end
+
