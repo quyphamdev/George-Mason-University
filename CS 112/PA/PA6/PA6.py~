@@ -1,0 +1,128 @@
+class Complex(object):
+
+	#class variable
+	count = 0
+
+	#incomplete
+	def __init__(self,real,imag):
+		print "creating complex ... "
+		#complete the definition of this method 
+		#by creating two instance variables with the names
+		#real and imag
+		
+		#also increment the class variable count
+
+		
+	#incomplete
+	def  conjugate():
+		self.imag = -1*self.imag
+		#HINT:something in the parameters is missing
+		
+		#NOTE:this method modifies the attribute of the class
+		#and does not return anything
+		
+	#incomplete	
+	def absolute(self):
+		return 0
+		#this method always returns a 0 
+		#modify the implementations so that 
+		#it returns the absolute value of this complex number
+	
+	
+	#incomplete
+	def __str__():
+		#this method is called whenever str(obj) is called on the
+		#object of this class
+		
+		#your implementation should return a string of the format
+		# 8 + 9j for Complex(8,9) and 
+		# 8 - 9j for Complex(8,-9)
+		# notice the sign change 
+		# HINT: you can use str.format() for a single line implementation
+
+	#complete - example implementation do not modify		
+	def __mul__(self,other):
+		real = self.real*other.real - self.imag*other.imag
+		imag = self.real*other.imag + self.imag*other.real
+		return Complex(real,imag)
+	
+	#incomplete 
+	def __add__():
+		#using the __mul__ method as template
+		#implement this method which return the 
+		#sum of two complex numbers
+	
+
+	#incomplete 	
+	def __div__():
+		#using the __mul__ method as template
+		#implement this method which return the 
+		#quotient of two complex numbers
+		
+	
+	#complete - example implementation do not modify
+	def __del__(self):
+		print "deleting complex ..."
+		Complex.count -= 1
+		
+		#this method is invoked whenever del is called
+		#on the object reference or whenever the object is
+		#automatically destroyed by python
+		
+
+#complete - do not modify
+def main():
+
+	#print count
+	print "Complex.count before creating any complex objects =",Complex.count	
+	
+	#creating complex numbers
+	c1 = Complex(8,9)
+	print "{0} created".format(c1)
+	c2 = Complex(3,4)
+	print "{0} created".format(c2)
+
+	#print count
+	print "Complex.count after creating {0} and {1} = {2}".format(c1,c2,Complex.count)
+	
+	#addition
+	c3 = c1 + c2
+	print "{0} + {1} = {2}".format(c1,c2,c3)
+	
+	
+	#multiplication
+	c4 = c3*c1
+	print "{0} * {1} = {2}".format(c3,c1,c4)
+	
+	
+	#conjugate modifies the number 
+	print "before conjugate()", c1
+	c1.conjugate()
+	print "after conjugate()", c1
+	
+	
+	#absolute value
+	print "absolute value of",c1, "is",c1.absolute()
+	
+	
+	#print count
+	print "count of complex numbers is",Complex.count
+	
+	del c4
+	print "count after deleting a complex number", Complex.count
+	
+
+main()
+		
+
+
+
+	
+
+	
+		
+		
+	
+
+	
+		
