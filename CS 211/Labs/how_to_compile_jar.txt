@@ -1,0 +1,16 @@
+To compile:
+	javac lab2.java
+To Run:
+	java lab2
+
+To create a jar file:
+
+Create a file name manifest.txt, type this line in
+	Main-Class: lab2
+
+"lab2" is your class name.
+Remember, press enter after "lab2" or there will be error compiling
+Type this in concole:
+	jar cmf manifest.txt lab2.jar lab2.class
+Run with:
+	java -jar lab2.jar
