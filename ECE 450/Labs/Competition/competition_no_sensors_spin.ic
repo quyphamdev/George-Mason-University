@@ -1,0 +1,221 @@
+// ECE450 Competition
+// Team #6
+// Team members: QUY PHAM, VAN NGUYEN.
+//
+// Goal: Push out all the (empty) coke bottles out of a circle.
+// First, It will spin at the center to kick all the cans which are too closed to it
+// Second, after the spin It will run from the center to the outter circle to push any cans infront out and then backward to center
+// Third, turn by an angle and proceed step 1,2 and 3 again to cover all 360 degree.
+
+/*Port Definitions */
+int RIGHT_MOTOR = 0; /* Motor Slot ? */
+int LEFT_MOTOR = 3; /* Motor Slot ? */
+
+/* Logic */
+#define TRUE 1
+#define FALSE 0
+/* Motor Commands */
+#define REST 0
+#define STOP 5
+#define PUSH 6
+#define BACKWARD 7
+#define TURN 8
+#define SPIN 9
+/* time different */
+#define SPIN_T 1.6
+#define TURN_T 0.2
+#define PUSH_T 1.6
+#define BACKWARD_T 1.6
+#define RUNNING_T 58.0
+
+/* */
+#define TURN_SPEED 14
+#define ASPEED 100
+#define SPIN_SPEED 100
+
+/* Global Variables */
+int spin_action;
+int turn_action;
+int push_action;
+int backward_action;
+int terminate_action;
+float running_t;
+float spin_t;
+float turn_t;
+float push_t;
+float backward_t;
+int lpwr;
+int rpwr;
+
+void main()
+{
+    // local vars
+    int motor_cmd;
+    int old_motor_cmd;
+    int flag;
+    
+    while(TRUE)
+      {
+        start_press();
+        // set timers
+        push_t = 0.0;        
+        backward_t = 0.0;
+        spin_t = seconds() + SPIN_T;
+        running_t = seconds() + RUNNING_T;
+        // init global vars
+        lpwr = ASPEED; 
+        rpwr = ASPEED; 
+        
+        // init behavior
+        spin_action = SPIN;
+        turn_action = REST;
+        push_action = REST;
+        backward_action = REST;
+        terminate_action = REST;
+        // init local vars
+        old_motor_cmd = -1;
+        flag = TRUE;
+        while(flag)
+          {            
+            //Call Behaviors
+            CansEliminator();
+            terminate();
+            
+            //Arbitration            
+            if (stop_button())
+              {
+                flag = FALSE;
+                motor_cmd = STOP;
+            }
+            else if (terminate_action != REST)
+              {
+                flag = FALSE;
+                motor_cmd = terminate_action;
+            }
+            else if (spin_action != REST)
+              {
+                motor_cmd = spin_action;
+            }
+            else if (turn_action != REST)
+              {
+                motor_cmd = turn_action;
+            }
+            else if (push_action != REST)
+              {
+                motor_cmd = push_action;    
+            }
+            else if (backward_action != REST)
+              {
+                motor_cmd = backward_action;
+            }
+            if (motor_cmd != old_motor_cmd)
+              {
+                motor_controller(motor_cmd);
+                old_motor_cmd = motor_cmd;
+            }
+            
+        }
+        
+    }
+}
+
+void CansEliminator()
+{    
+    spin();
+    turn_around();
+    push();
+    backward();    
+}
+
+void spin()
+{
+    if (spin_action != REST)
+      {
+        if(spin_t < seconds())
+          {
+            spin_action = REST;
+            turn_action = TURN;
+            turn_t = seconds() + TURN_T;
+        }
+    }
+}
+
+void turn_around()
+{    
+    if (turn_action != REST)
+      {        
+        if(turn_t < seconds())
+          {
+            turn_action = REST;
+            push_action = PUSH;
+            push_t = seconds() + PUSH_T;
+        }
+    }
+}
+
+void push()
+{
+    if(push_action != REST)
+      {
+        if(push_t < seconds())
+          {
+            push_action = REST;
+            backward_action = BACKWARD;
+            backward_t = seconds() + BACKWARD_T;
+        }
+    }
+}
+
+void backward()
+{
+    if(backward_action != REST)
+      {
+        if(backward_t < seconds())
+          {
+            backward_action = REST;
+            turn_action = TURN;
+            turn_t = seconds() + TURN_T;
+        }
+    }
+}
+
+void terminate()
+{
+    if (running_t < seconds())
+      {
+        terminate_action = STOP;
+    }
+}
+
+void motor_controller(int motor_cmd) // Defines motor actions
+{
+    
+    if (motor_cmd == STOP)
+      {
+        ao();       
+    }
+    else if (motor_cmd == SPIN)
+      {
+        motor(LEFT_MOTOR,-SPIN_SPEED);
+        motor(RIGHT_MOTOR,SPIN_SPEED);   
+    }
+    else if (motor_cmd == TURN)
+      {
+        motor(LEFT_MOTOR,-TURN_SPEED);
+        motor(RIGHT_MOTOR,TURN_SPEED);
+    }
+    else if (motor_cmd == PUSH)
+      {
+        motor(LEFT_MOTOR,lpwr);
+        motor(RIGHT_MOTOR,rpwr);
+    }
+    else if (motor_cmd == BACKWARD)
+      {
+        motor(LEFT_MOTOR,-lpwr);
+        motor(RIGHT_MOTOR,-rpwr);
+    }
+}//end of motor_ controller definition
+
+
+
+

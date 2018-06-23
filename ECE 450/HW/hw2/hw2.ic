@@ -1,0 +1,66 @@
+// ECE 450: Homework Exercise 2
+// Team #6
+// --- Quy Pham
+// --- Van Nguyen
+
+#define LEFT_MOTOR 1
+#define RIGHT_MOTOR 2
+
+int speed = 255;
+
+void main()
+{
+    while(1)
+      {
+        printf("Press Start or Stop...\n");
+        sleep(0.2);
+        if(stop_button())
+          {
+            printf("Pressed Stop...\n");
+            stop();
+        }
+        else if(start_button())
+          {
+            printf("Pressed Start...\n");            
+            start();
+        }
+    }
+}
+
+void start()
+{
+    beep();
+    //fd(LEFT_MOTOR); // go forward
+    //fd(RIGHT_MOTOR);
+    motor(LEFT_MOTOR, speed);
+    motor(RIGHT_MOTOR, speed);
+    printf("Forward\n");
+    sleep(2.0);
+    ao(); // turn off all motors
+    printf("Stop\n");
+    sleep(1.0);
+    //bk(LEFT_MOTOR); // go backward
+    //bk(RIGHT_MOTOR);
+    motor(LEFT_MOTOR, -speed);
+    motor(RIGHT_MOTOR, -speed);
+    printf("Reverse\n");
+    sleep(2.0);
+    ao();
+    printf("END\n");
+    beep();
+    beep();
+}
+
+void stop()
+{
+    beep();
+    float t;
+    t = seconds() + 15.0;
+    while(seconds() < t)
+      {
+        printf("Knob = %d\n", (speed=knob()));
+        sleep(0.1);
+    }
+    beep();
+    beep();
+}

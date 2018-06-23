@@ -1,0 +1,122 @@
+#include<avr/io.h>
+#include<avr/interrupt.h>
+#include <util/delay.h>
+
+
+#define LEFT_MOTOR 1
+#define RIGHT_MOTOR 2
+
+void motor( int mtr, int speed)
+{
+	static int up;
+	static int back;
+	if(speed > 0)
+	{
+		up = speed;
+		back = 0;
+	}
+	else if(speed<0)
+	{
+		up = 0;
+		back = -speed;
+	}
+	else
+	{
+		up = 0;
+		back = 0;
+	}
+	if(mtr == LEFT_MOTOR)
+	{
+		OCR0A = up;
+		OCR0B = back;
+	}
+	else // right motor
+	{
+		OCR1A = up;
+		OCR1B = back;
+	}
+}
+
+ISR( PCINT1_vect)
+{
+	static int dutycycle = 0;
+	unsigned int x = PINC;
+	// button pressed, bit C4 is 0
+	if(!(x & 0b00010000))
+	{
+		dutycycle += 1;
+		if(dutycycle > 2)
+			dutycycle = 0;
+		switch(dutycycle)
+		{
+			case 0:
+				motor(LEFT_MOTOR, 0 );//Off
+				motor(RIGHT_MOTOR, 0);//off
+				break;
+			case 1:
+				motor(LEFT_MOTOR, 255 );//100% Forward
+				motor(RIGHT_MOTOR, 255 );//100% Forward
+				break;
+			case 2:
+				// reverse 2 sec
+				motor(LEFT_MOTOR, -255 );//reverse 2sec
+				motor(RIGHT_MOTOR, -255);//reverse 2sec
+				_delay_ms(500);
+				// turn right 1 sec
+				motor(LEFT_MOTOR, 255 );
+				motor(RIGHT_MOTOR, -10);
+				_delay_ms(250);
+				// forward
+				motor(LEFT_MOTOR, 255 );
+				motor(RIGHT_MOTOR, 255);
+				break;
+		}
+	}
+}
+
+int main (void)
+{
+	/* Left Motor */
+	//Setup the PWM on pin 12 (PD6)
+	TCCR0A = (3<<COM0A0)|(1<<WGM00) ; // Setup for 0 Volts when counter is low; Phase Correct PWM
+	TCCR0B = (0<<WGM02)|(2<<CS00) ; // Use an 8-bit prescaler
+	OCR0A = (unsigned int) 0; // Initialize motor so that it is off
+	DDRD = (1<<PORTD6) ; // Don’t forget to set this pin as an output
+	//Setup the PWM on pin 11 (PD5)
+	TCCR0A = (3<<COM0B0)|TCCR0A ;// Setup for 0 Volts when counter is low; Phase Correct PWM
+	OCR0B = (unsigned int) 0 ; // Initialize motor so that it is off
+	DDRD = DDRD|(1<<PORTD5) ;// Don’t forget to set this pin as an output
+
+		/* Right Motor */
+	//Setup the PWM on pin 16 (PB2)
+	TCCR1A = (3<<COM1A0)|(1<<WGM10) ; // Setup for 0 Volts when counter is low; Phase Correct PWM
+	TCCR1B = (0<<WGM12)|(2<<CS10) ; // Use an 8-bit prescaler
+	OCR1B = (unsigned int) 0; // Initialize motor so that it is off
+	DDRB = (1<<PORTB2) ; // Don’t forget to set this pin as an output
+	//Setup the PWM on pin 15 (PB1)
+	TCCR1A = (3<<COM1B0)|TCCR1A ;// Setup for 0 Volts when counter is low; Phase Correct PWM
+	OCR1A = (unsigned int) 0 ; // Initialize motor so that it is off
+	DDRB = DDRB|(1<<PORTB1) ;// Don’t forget to set this pin as an output
+
+
+	// Setup for External Interrupt PCINT12 (uses PC4 which is also pin 27)
+	SREG = ( 1<<SREG_I );
+	PCICR = ( 1<<PCIE1 );
+	PCMSK1 = ( 1<<PCINT12 )|( 1<<PCINT11 )|( 1<<PCINT10 )|( 1<<PCINT9 );
+	PORTC = ( 1<<PORTC4 )|( 1<<PORTC3 )|( 1<<PORTC2 )|( 1<<PORTC1 ); //Use PC4,PC3,PC2,PC1's pull-up resistor
+
+	/* Bumper */
+	//Setup the PWM on pin 25 (PC2)
+	TCCR2A = (3<<COM2A0)|(1<<WGM20) ; // Setup for 0 Volts when counter is low; Phase Correct PWM
+	TCCR2B = (0<<WGM22)|(2<<CS20) ; // Use an 8-bit prescaler
+	OCR2A = (unsigned int) 0; // Initialize motor so that it is off
+	DDRC = (1<<PORTC2) ; // Don’t forget to set this pin as an output
+	//Setup the PWM on pin 24 (PC1)
+	TCCR2A = (3<<COM2B0)|TCCR2A ;// Setup for 0 Volts when counter is low; Phase Correct PWM
+	OCR2B = (unsigned int) 0 ; // Initialize motor so that it is off
+	DDRC = DDRD|(1<<PORTC1) ;// Don’t forget to set this pin as an output
+
+
+
+	while(1) { }
+}

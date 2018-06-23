@@ -1,0 +1,142 @@
+// ECE 450: Bumper Car Lab
+// Team #
+// Names?
+/*Port Definitions */
+int RIGHT_MOTOR = 1; /* Motor Slot 0 */
+int LEFT_MOTOR = 2; /* Motor Slot 2 */
+int LEFT_BUMPER = 7;
+int RIGHT_BUMPER = 15;
+
+/* Logic */
+#define TRUE 1
+#define FALSE 0
+/* Motor Commands */
+#define REST 0
+#define STOP 1
+#define FORWARD 2
+#define REVERSE 3
+#define TURN_RIGHT 4
+#define TURN_LEFT 5
+
+/* Global Variables */
+int reset_action;
+int escape_action;
+float escape_time;
+int escape_bumper;
+
+void main()
+{ 
+    int motor_cmd;
+    int old_motor_cmd;
+    int flag;
+    
+    while(TRUE)
+      {
+        printf("waiting for start...\n");
+        start_press();
+        //Initialize the behaviors
+        escape_action = REST;
+        reset_action = REST;
+        
+        //Initialize local variables
+        old_motor_cmd = -1;
+        flag = TRUE;
+        while(flag) //Arbitrate
+          {            
+            //Call Behaviors
+            reset();
+            escape();
+            //Arbitration
+            motor_cmd = FORWARD; //Default
+            if (reset_action != REST)
+              { 
+                flag = FALSE;
+                motor_cmd = reset_action;
+            }
+            else if (escape_action != REST)
+              {
+                motor_cmd = escape_action;
+            }
+            if (motor_cmd != old_motor_cmd)
+              { 
+                motor_control(motor_cmd);
+                old_motor_cmd = motor_cmd;
+            }
+        }
+    }
+} //end of main routine
+
+void reset()
+{
+    printf("inside stop()..\n");
+    if (stop_button() == 1)
+      {
+        printf("stop....\n");
+        reset_action = STOP;
+    }
+}
+
+void escape()
+{ 
+    if (escape_action == REST)
+      { 
+        if (digital(LEFT_BUMPER))
+          {
+            escape_bumper = LEFT_BUMPER;
+            escape_action = REVERSE;
+            escape_time = seconds() + 2.0;
+
+        }
+        else if (digital(RIGHT_BUMPER))
+          {
+            escape_bumper = RIGHT_BUMPER;
+            escape_action = REVERSE;
+            escape_time = seconds() + 2.0;
+
+        }
+    }
+    else if (escape_action == REVERSE)
+      {
+        if (seconds() > escape_time)
+          {
+            if (escape_bumper == LEFT_BUMPER)
+              escape_action = TURN_RIGHT;
+            else
+              escape_action = TURN_LEFT;
+            escape_time = seconds() + 1.0;
+        }
+    }
+    else if (escape_action == TURN_LEFT || escape_action == TURN_RIGHT)
+      {
+        if (seconds() > escape_time)
+          escape_action = REST;
+    }
+}
+
+void motor_control(int motor_cmd) // Defines motor actions
+{
+    if (motor_cmd == FORWARD)
+      {
+        fd(LEFT_MOTOR);
+        fd(RIGHT_MOTOR);
+    }
+    if (motor_cmd == REVERSE)
+      {
+        bk(LEFT_MOTOR);
+        bk(RIGHT_MOTOR);
+    }
+    if (motor_cmd == TURN_RIGHT) // 45 right ????
+      {
+        fd(LEFT_MOTOR);
+        bk(RIGHT_MOTOR);
+    }
+    if (motor_cmd == TURN_LEFT) // 45 left ?????
+      {
+        bk(LEFT_MOTOR);
+        fd(RIGHT_MOTOR);
+    }
+    if (motor_cmd == STOP)
+      {
+        ao();
+    }
+}//end of motor_control definition

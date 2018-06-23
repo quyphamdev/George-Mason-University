@@ -1,0 +1,150 @@
+// ECE 450: PD Search Routine
+// Team #6
+// Names: QUY PHAM, VAN NGUYEN
+
+/*Port Definitions */
+int RIGHT_MOTOR = 2; /* Motor Slot ? */
+int LEFT_MOTOR = 1; /* Motor Slot ? */
+int LEFT_BUMPER = 7;
+int RIGHT_BUMPER = 15;
+/* Logic */
+#define TRUE 1
+#define FALSE 0
+/* Motor Commands */
+#define REST 0
+#define STOP 5
+#define FOLLOW 6
+#define SEARCH 7
+/* Global Variables */
+int search_action;
+int follow_action;
+int terminate_action;
+int reading;
+int old_reading;
+int power;
+/* Constant */
+#define SET_POINT 115
+#define UPPER_LIMIT 160 //right
+#define LOWER_LIMIT 70 //left
+//define global variables
+
+void main()
+{ 
+    //define local variables
+    int motor_cmd;
+    int old_motor_cmd;
+    int flag; 
+    
+    ao();
+    while(TRUE)
+      {
+        printf("press start..\n");
+        start_press();          
+        //Initialize the behaviors
+        search_action = SEARCH;
+        follow_action = FOLLOW;
+        terminate_action = REST;
+        //Initialize local variables
+        old_motor_cmd = -1;
+        flag = TRUE;
+        //
+        old_reading = 0;
+        while(flag) //Arbitrate
+          {
+            reading = analog(2);
+            //printf("%d\n",reading);
+            //sleep(0.1);
+            motor_cmd = SEARCH; //Default
+            //Call Behaviors
+            search();
+            follow();
+            terminate();
+            //Arbitration
+            
+            if (stop_button())
+              {
+                flag = FALSE;
+                motor_cmd = STOP;
+            }
+            else if (terminate_action != REST)
+              {
+                flag = FALSE;
+                motor_cmd = terminate_action;
+            }
+            else if (search_action != REST)
+              {
+                motor_cmd = search_action;
+            }
+            else if (follow_action != REST)
+              {
+                motor_cmd = follow_action;    
+            }
+            if ((motor_cmd != old_motor_cmd)||(motor_cmd == FOLLOW))
+              {
+                motor_controller(motor_cmd);
+                old_motor_cmd = motor_cmd;
+            }
+        }
+    }
+} //end of main routine
+
+void search()
+{
+    if(search_action == REST) 
+      {
+        return;
+    }
+    else if((reading > UPPER_LIMIT)||(reading < LOWER_LIMIT))
+      {
+        printf("see light..\n");
+        sleep(0.1);
+        search_action = REST;
+        //follow_action = FOLLOW;
+    }
+}
+
+void terminate()
+{
+    if ((digital(LEFT_BUMPER))||(digital(RIGHT_BUMPER)))
+      {
+        terminate_action = STOP;
+    }
+}
+void follow()
+{
+    float pgain = 0.7;
+    float dgain = 0.2;
+    int velocity = reading - old_reading;
+    power = (int)((pgain*(float)(reading - SET_POINT))-dgain*(float)velocity);
+    old_reading = reading;
+    //printf("power=%d\n",power);
+    //sleep(0.1);
+}
+void motor_controller(int motor_cmd) // Defines motor actions
+{
+    int lpwr, rpwr;
+    
+    if (motor_cmd == STOP)
+      {
+        ao();       
+    }
+    else if (motor_cmd == SEARCH)
+      {
+        // turn right
+        printf("searching...\n");
+        motor(LEFT_MOTOR, 30);
+        motor(RIGHT_MOTOR, -10);
+    }
+    else if (motor_cmd == FOLLOW)
+      {
+        lpwr = 25+power;
+        rpwr = 25-power;
+        if(lpwr < 0) lpwr = 0;
+        if(rpwr < 0) rpwr = 0;
+        printf("follow...\n");
+        motor(LEFT_MOTOR, lpwr);
+        motor(RIGHT_MOTOR, rpwr);
+        printf("left=%d  right=%d\n",lpwr,rpwr);
+        sleep(0.1);
+    }
+}//end of motor_ controller definition
