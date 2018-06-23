@@ -1,0 +1,21 @@
+ORIGIN 0 ; origin  specifies the first address where the program will locate
+SEGMENT 0
+ADD R5, R4, 5 ; R5 = 5
+ADD R4, R4, R5 ; R4 = R5
+INIT_INPUT:
+ADD R6, R5, 0	; final result will be in R6
+ADD R4, R4, -1 ; R4 = R4-1
+ADD R0, R4, 0 ; R0 = R4
+ADD R0, R0, -1 ; check if R4==1
+BRZ ENDFACTORIAL ; done with calculating factorial(5)
+ADD R1, R4, 0 ; R1 = R4 counter
+JSR MUL ; JUMP TO FUNC R6=MUL(R5,R4)
+FINISH:
+BR FINISH
+MUL: ; multiplicaton is simply an addition. 5*4=5+5+5+5+5
+ADD R1, R1, -1
+BRZ INIT_INPUT
+ADD R5, R5, R6 
+BR MUL
+ENDFACTORIAL:
+RET

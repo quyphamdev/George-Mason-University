@@ -1,0 +1,51 @@
+ORIGIN 0 ; origin  specifies the first address where the program will locate
+SEGMENT 0
+LOOP:
+ADD R0,R0,2
+LSHF R1,R0,1
+ADD R2,R0,R0
+RSHFL R3,R2,1
+RSHFA R4,R2,2
+; test JSRR
+LEA R5,L2
+JSRR R5
+BR LOOP
+L2:
+; test load word
+ADD R5,R5,2
+LEA R5, DataSegment
+LDR R0,R5,ZERO ; R0=0
+LDR R2,R5,NINER ; R2=9999
+STR R0,R5,NINER ; swap mem values
+STR R2,R5,ZERO
+LDR R0,R5,ZERO ; R0=9999
+LDR R2,R5,NINER ; R2=0
+; test Load byte
+LDB R0,R5,ZERO ; R0=15
+; test store byte
+STB R0,R5,ZERO
+LDB R1,R5,ZERO ; R1=15
+; test inderect load word
+STR R1,R5,RES1 ; RES1=62
+LEA R0,RES1
+STR R0,R5,RES2
+LDI R2,R5,RES2 ; R2=15
+STI R5,R5,RES2 ; RES2=R5
+LDI R2,R5,RES2 ; R2=R5
+TRAP Bear
+LDR R2,R5,RES3 ; R2=0
+LDR R2,R5,ONETWELVE ; R2=112
+SEGMENT        DataSegment:	
+ZERO:	 DATA2 0
+ONETWELVE:	 DATA2 112
+ENT:	DATA2 10
+NINER:	 DATA2 9999
+
+RES1:	 DATA2 0;
+RES2:	 DATA2 0; 
+RES3:	 DATA2 0;
+
+Bear:	DATA2 CatchMe
+CatchMe:LDR R2, R5, ONETWELVE ; R2=112	
+	NOT R2, R2	; R2=65423
+	RET

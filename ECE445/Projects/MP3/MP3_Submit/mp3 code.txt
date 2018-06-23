@@ -1,0 +1,22 @@
+ORIGIN 0
+SEGMENT	
+		ADD R1, R0, 7  ; r4=multiply(r1,r2)
+		ADD R2, R0, 11   
+		ADD R3, R0, 4		
+		ADD R4, R0, R0		
+Loop1:	AND R7, R2, 8  
+		BRz Loop2
+		ADD R4,R4,R1
+Loop2:	ADD R3,R3,0
+		BRz Loop3
+		LSHF R4,R4,1 
+		RSHFL R3,R3,1
+		LSHF R2,R2,1
+		BR Loop1
+Loop3: 	BR Loop3  ; r4 = multiply(7,11)= 77
+
+-- multiply code r4=multiply(r1,r2)=7*11=77
+mem(0):=x"27"; mem(1):=x"12"; mem(2):=x"2B"; mem(3):=x"14"; mem(4):=x"24"; mem(5):=x"16"; mem(6):=x"00"; mem(7):=x"18"; 
+mem(8):=x"A8"; mem(9):=x"5E"; mem(10):=x"01"; mem(11):=x"04"; mem(12):=x"01"; mem(13):=x"19"; mem(14):=x"E0"; mem(15):=x"16"; 
+mem(16):=x"04"; mem(17):=x"04"; mem(18):=x"21"; mem(19):=x"D9"; mem(20):=x"D1"; mem(21):=x"D6"; mem(22):=x"A1"; mem(23):=x"D4"; 
+mem(24):=x"F7"; mem(25):=x"0F"; mem(26):=x"FF"; mem(27):=x"0F"; mem(28):=x"F4"; mem(29):=x"F4"; mem(30):=x"F4"; mem(31):=x"F4"; 

@@ -1,0 +1,160 @@
+<config>
+    <version>
+        2.0
+    </version>
+    <comment>
+    </comment>
+    <databases>
+        <database id="">*virtual*</database>
+        <database id="B8312F49 9D8E4C00">../../My_Designs/ECE445MP/LC3b/src/First2000ns_waveform.asdb</database>
+    </databases>
+    <signallists>
+        <signallist id="0">
+                AAAAGAAGwAAAAAAQAQMBFzETDlMALQEsAXNfAAAQEQAA
+|
+        </signallist>
+    </signallists>
+    <propertybases>
+        <propertybase id="0">
+            <propclass name="radix">
+                <property first="268435456" last="268435459">
+                10
+                </property>
+                <property first="268435476" last="268435476">
+                10
+                </property>
+                <property first="268435493" last="268435493">
+                10
+                </property>
+                <property first="268435510" last="268435510">
+                10
+                </property>
+                <property first="268435512" last="268435513">
+                10
+                </property>
+                <property first="268435530" last="268435538">
+                10
+                </property>
+                <property first="268435540" last="268435547">
+                10
+                </property>
+                <property first="268435676" last="268435676">
+                10
+                </property>
+                <property first="268435733" last="268435733">
+                10
+                </property>
+            </propclass>
+            <propclass name="mode">
+            </propclass>
+            <propclass name="notation">
+                <property first="268435459" last="268435459">
+                1
+                </property>
+                <property first="268435476" last="268435476">
+                1
+                </property>
+                <property first="268435493" last="268435493">
+                1
+                </property>
+                <property first="268435513" last="268435513">
+                1
+                </property>
+                <property first="268435524" last="268435524">
+                1
+                </property>
+                <property first="268435530" last="268435530">
+                1
+                </property>
+                <property first="268435539" last="268435539">
+                1
+                </property>
+                <property first="268435556" last="268435556">
+                1
+                </property>
+                <property first="268435667" last="268435667">
+                1
+                </property>
+                <property first="268435671" last="268435671">
+                1
+                </property>
+                <property first="268435675" last="268435676">
+                1
+                </property>
+                <property first="268435682" last="268435682">
+                1
+                </property>
+                <property first="268435693" last="268435693">
+                1
+                </property>
+                <property first="268435697" last="268435697">
+                1
+                </property>
+                <property first="268435699" last="268435699">
+                1
+                </property>
+                <property first="268435701" last="268435701">
+                1
+                </property>
+                <property first="268435708" last="268435708">
+                1
+                </property>
+                <property first="268435716" last="268435716">
+                1
+                </property>
+                <property first="268435725" last="268435725">
+                1
+                </property>
+                <property first="268435742" last="268435742">
+                1
+                </property>
+            </propclass>
+            <propclass name="reverse">
+            </propclass>
+            <propclass name="bold">
+            </propclass>
+            <propclass name="row_height">
+            </propclass>
+            <propclass name="color">
+            </propclass>
+            <propclass name="compared">
+            </propclass>
+            <propclass name="analog_bounds">
+            </propclass>
+        </propertybase>
+    </propertybases>
+    <prefbases>
+        <prefbase id="0" >
+            <pref name="End Time" value="2080765" />
+            <pref name="Signal name column size" value="111" />
+            <pref name="Start Time" value="1269324" />
+            <pref name="Value column size" value="49" />
+        </prefbase>
+    </prefbases>
+    <bookmarkbases>
+        <bookmarks id="0">
+        </bookmarks>
+    </bookmarkbases>
+    <cursorbases>
+        <cursors id="0">
+            <cursor value="2000000" label="Cursor 1" />
+        </cursors>
+    </cursorbases>
+    <views>
+        <view signallist="0" propertybase="0" prefbase="0" type="1" bookmarks="0" cursors="0"/>
+    </views>
+    <virtualsources>
+        <virtualnamedrows>
+        </virtualnamedrows>
+        <virtualbuses>
+        </virtualbuses>
+        <virtualalias>
+        </virtualalias>
+        <virtualbusalias>
+        </virtualbusalias>
+        <virtualanalogalias>
+        </virtualanalogalias>
+        <virtualanalogbusalias>
+        </virtualanalogbusalias>
+        </virtualsources>
+</config>

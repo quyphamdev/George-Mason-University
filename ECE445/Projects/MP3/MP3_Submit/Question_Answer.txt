@@ -1,0 +1,7 @@
+Q1 "Is your unsigned multiplier running much faster in the design with cache than without cache? Explain."
+==> It ran slower in the design with cache than without cache because the program is small and in the design with cache it has to load data from memory to cache and then from cache to registers. That is more steps than the design without cache. That makes it ran slower.
+
+
+Q2 "Comparing the speed increased for cache and without cache version of the two programs (MP2 test code and unsigned multiply), which one gains better performance from adding cache? Explain."
+==> Because the MP2 test code has more load commands so the design with cache becomes faster.
+
