@@ -1,0 +1,9 @@
+[Files List]
+C:\Program Files\Aldec\Active-HDL 7.3\Vlib\Std/src/standard.vhd=S
+C:\Program Files\Aldec\Active-HDL 7.3\Vlib\IEEE/src/stdlogic_p.vhd=S
+C:\Program Files\Aldec\Active-HDL 7.3\Vlib\IEEE/src/stdlogic_b.vhd=S
+C:\Program Files\Aldec\Active-HDL 7.3\Vlib\IEEE/src/numstd_p.vhd=S
+C:\Program Files\Aldec\Active-HDL 7.3\Vlib\IEEE/src/numstd_b.vhd=S
+Z:\ECE448\LAB4\FIRFilter/src/FIRPackage.vhd=S
+Z:\ECE448\LAB4\FIRFilter/src/serialfirfilter.vhd=S
+Z:\ECE448\LAB4\FIRFilter/src/testbench/serialfirfilter_tb.vhd=S

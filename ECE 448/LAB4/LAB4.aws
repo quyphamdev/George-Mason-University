@@ -1,0 +1,6 @@
+[Version]
+Version=7.3
+[Designs]
+firfilter=.\FIRFilter\FIRFilter.adf
+[Expand]
+firfilter=1

@@ -1,0 +1,15 @@
+1367
+~E 1 "./src/qreg.vhd" 28 qreg
+~A 1 "./src/qreg.vhd" 41 qreg
+~E 1 "./src/parallelfirfilter.vhd" 30 parallelfirfilter
+~A 1 "./src/parallelfirfilter.vhd" 44 parallelfirfilter
+~E 1 "./src/testbench/parallelfirfilter_tb.vhd" 29 parallelfirfilter_tb
+~A 1 "./src/testbench/parallelfirfilter_tb.vhd" 36 tb_architecture
+~E 1 "./src/testbench/serialfirfilter_tb.vhd" 29 serialfirfilter_tb
+~A 1 "./src/testbench/serialfirfilter_tb.vhd" 35 tb_architecture
+~E 1 "./src/SerialFIRFilter.vhd" 30 serialfirfilter
+~A 1 "./src/serialfirfilter.vhd" 44 serialfirfilter
+~C 1 "./src/testbench/serialfirfilter_tb.vhd" 113 testbench_for_serialfirfilter
+~C 1 "./src/testbench/parallelfirfilter_tb.vhd" 114 testbench_for_parallelfirfilter
+~E 1 "./src/zreg.vhd" 28 zreg
+~A 1 "./src/zreg.vhd" 41 zreg

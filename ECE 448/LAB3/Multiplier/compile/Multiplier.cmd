@@ -1,0 +1,1 @@
+-w -s "Z:\ECE448\LAB3\library.cfg"  -j "Z:\ECE448\LAB3\Multiplier\projlib.cfg"  -d "Z:\ECE448\LAB3\Multiplier\compile"  -work Multiplier -dbg -e 100 -2002 "Z:\\ECE448\\LAB3\\Multiplier\\src\\ComboArrayMultiplier.vhd" 

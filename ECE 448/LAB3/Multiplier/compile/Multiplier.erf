@@ -1,0 +1,4 @@
+MESSAGE "File: Z:\ECE448\LAB3\Multiplier\src\ComboArrayMultiplier.vhd" 
+MESSAGE "Compile Entity "ComboArrayMultiplier"" 
+MESSAGE "Compile Architecture "ComboArrayMultiplier" of Entity "ComboArrayMultiplier"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  1.0 [s]" 

@@ -1,0 +1,14 @@
+i<>.\src\PipelineComboArrayMulCell.vhd
+i<>.\src\ComboArrayMulCell.vhd
+i<>.\src\ComboArrayMulCellNoN.vhd
+i<>.\src\ComboArrayMultiplier.vhd
+i<>.\src\ComboMultiplier.vhd
+i<>.\src\DFFComboArrayMulCell.vhd
+i<>.\src\DFFComboArrayMulCellNoN.vhd
+i<>.\src\DFlipFlop.vhd
+i<>.\src\FullAdder.vhd
+i<>.\src\PipelineComboArrayMultiplier.vhd
+i<>.\src\TestBench\comboarraymulcell_TB.vhd
+i<>.\src\TestBench\comboarraymultiplier_TB.vhd
+i<>.\src\TestBench\combomultiplier_TB.vhd
+i<>.\src\TestBench\pipelinecomboarraymultiplier_TB.vhd

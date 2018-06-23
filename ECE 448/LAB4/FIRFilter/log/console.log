@@ -1,0 +1,806 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 3.0 [s].
+acom -work FIRFilter -2002  $DSN/src/SerialFIRFilter.vhd
+# Compile...
+# File: Z:\ECE448\LAB4\FIRFilter\src\SerialFIRFilter.vhd
+# Compile Entity "SerialFIRFilter"
+# Compile Architecture "SerialFIRFilter" of Entity "SerialFIRFilter"
+# Error: COMP96_0078: SerialFIRFilter.vhd : (77, 28): Unknown identifier "signed".
+# Error: COMP96_0078: SerialFIRFilter.vhd : (77, 49): Unknown identifier "signed".
+# Error: COMP96_0133: SerialFIRFilter.vhd : (77, 49): Cannot find object declaration.
+# Error: COMP96_0289: SerialFIRFilter.vhd : (77, 49): Prefix of index must be an array.
+# Error: COMP96_0133: SerialFIRFilter.vhd : (77, 28): Cannot find object declaration.
+# Error: COMP96_0289: SerialFIRFilter.vhd : (77, 28): Prefix of index must be an array.
+# Error: COMP96_0149: SerialFIRFilter.vhd : (77, 28): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0078: SerialFIRFilter.vhd : (78, 33): Unknown identifier "signed".
+# Error: COMP96_0078: SerialFIRFilter.vhd : (78, 46): Unknown identifier "signed".
+# Error: COMP96_0133: SerialFIRFilter.vhd : (78, 46): Cannot find object declaration.
+# Error: COMP96_0289: SerialFIRFilter.vhd : (78, 46): Prefix of index must be an array.
+# Error: COMP96_0133: SerialFIRFilter.vhd : (78, 33): Cannot find object declaration.
+# Error: COMP96_0289: SerialFIRFilter.vhd : (78, 33): Prefix of index must be an array.
+# Error: COMP96_0149: SerialFIRFilter.vhd : (78, 33): Explicit type conversions are allowed between closely related types only.
+# Compile failure 14 Errors 0 Warnings  Analysis time :  0.8 [s]
+acom -work FIRFilter -2002  $DSN/src/SerialFIRFilter.vhd
+# Compile...
+# File: Z:\ECE448\LAB4\FIRFilter\src\SerialFIRFilter.vhd
+# Compile Entity "SerialFIRFilter"
+# Compile Architecture "SerialFIRFilter" of Entity "SerialFIRFilter"
+# Error: COMP96_0071: SerialFIRFilter.vhd : (77, 28): Operator "*" is not defined for such operands.
+# Error: COMP96_0149: SerialFIRFilter.vhd : (77, 28): Explicit type conversions are allowed between closely related types only.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.4 [s]
+acom -work FIRFilter -2002  $DSN/src/SerialFIRFilter.vhd
+# Compile...
+# File: Z:\ECE448\LAB4\FIRFilter\src\SerialFIRFilter.vhd
+# Compile Entity "SerialFIRFilter"
+# Compile Architecture "SerialFIRFilter" of Entity "SerialFIRFilter"
+# Error: COMP96_0071: SerialFIRFilter.vhd : (77, 10): Operator "*" is not defined for such operands.
+# Error: COMP96_0104: SerialFIRFilter.vhd : (77, 10): Undefined type of expression.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -work FIRFilter -2002  $DSN/src/SerialFIRFilter.vhd
+# Compile...
+# File: Z:\ECE448\LAB4\FIRFilter\src\SerialFIRFilter.vhd
+# Compile Entity "SerialFIRFilter"
+# Compile Architecture "SerialFIRFilter" of Entity "SerialFIRFilter"
+# Error: COMP96_0078: SerialFIRFilter.vhd : (77, 28): Unknown identifier "signed".
+# Error: COMP96_0078: SerialFIRFilter.vhd : (77, 49): Unknown identifier "signed".
+# Error: COMP96_0133: SerialFIRFilter.vhd : (77, 49): Cannot find object declaration.
+# Error: COMP96_0289: SerialFIRFilter.vhd : (77, 49): Prefix of index must be an array.
+# Error: COMP96_0133: SerialFIRFilter.vhd : (77, 28): Cannot find object declaration.
+# Error: COMP96_0289: SerialFIRFilter.vhd : (77, 28): Prefix of index must be an array.
+# Error: COMP96_0149: SerialFIRFilter.vhd : (77, 28): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0078: SerialFIRFilter.vhd : (78, 33): Unknown identifier "signed".
+# Error: COMP96_0078: SerialFIRFilter.vhd : (78, 46): Unknown identifier "signed".
+# Error: COMP96_0133: SerialFIRFilter.vhd : (78, 46): Cannot find object declaration.
+# Error: COMP96_0289: SerialFIRFilter.vhd : (78, 46): Prefix of index must be an array.
+# Error: COMP96_0133: SerialFIRFilter.vhd : (78, 33): Cannot find object declaration.
+# Error: COMP96_0289: SerialFIRFilter.vhd : (78, 33): Prefix of index must be an array.
+# Error: COMP96_0149: SerialFIRFilter.vhd : (78, 33): Explicit type conversions are allowed between closely related types only.
+# Compile failure 14 Errors 0 Warnings  Analysis time :  0.4 [s]
+acom -work FIRFilter -2002  $DSN/src/SerialFIRFilter.vhd
+# Compile...
+# File: Z:\ECE448\LAB4\FIRFilter\src\SerialFIRFilter.vhd
+# Compile Entity "SerialFIRFilter"
+# Compile Architecture "SerialFIRFilter" of Entity "SerialFIRFilter"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+acom -work FIRFilter -2002  $DSN/src/TestBench/serialfirfilter_TB.vhd
+# Compile...
+# File: Z:\ECE448\LAB4\FIRFilter\src\TestBench\serialfirfilter_TB.vhd
+# Compile Entity "serialfirfilter_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "serialfirfilter_tb"
+# Compile Configuration "TESTBENCH_FOR_serialfirfilter"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.9 [s]
+asim -advdataflow  serialfirfilter_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.3 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1733 kB (elbread=1023 elab2=439 kernel=270 sdf=0)
+# KERNEL: ASDB file was created in location Z:\ECE448\LAB4\FIRFilter\src\wave.asdb
+#  12:53 AM, Saturday, March 06, 2010
+#  Simulation has been initialized
+#  Selected Top-Level: serialfirfilter_tb (tb_architecture)
+# 7 signal(s) traced.
+run 1000 ns
+# KERNEL: stopped at time: 1 us
+run 1000 ns
+# KERNEL: stopped at time: 2 us
+run 1000 ns
+# KERNEL: stopped at time: 3 us
+run 1000 ns
+# KERNEL: stopped at time: 4 us
+run 1000 ns
+# KERNEL: stopped at time: 5 us
+run 1000 ns
+# KERNEL: stopped at time: 6 us
+run 1000 ns
+# KERNEL: stopped at time: 7 us
+run 1000 ns
+# KERNEL: stopped at time: 8 us
+run 1000 ns
+# KERNEL: stopped at time: 9 us
+run 1000 ns
+# KERNEL: stopped at time: 10 us
+run 1000 ns
+# KERNEL: stopped at time: 11 us
+run 1000 ns
+# KERNEL: stopped at time: 12 us
+run 1000 ns
+# KERNEL: stopped at time: 13 us
+run 1000 ns
+# KERNEL: stopped at time: 14 us
+run 1000 ns
+# KERNEL: stopped at time: 15 us
+run 1000 ns
+# KERNEL: stopped at time: 16 us
+run 1000 ns
+# KERNEL: stopped at time: 17 us
+run 1000 ns
+# KERNEL: stopped at time: 18 us
+run 1000 ns
+# KERNEL: stopped at time: 19 us
+run 1000 ns
+# KERNEL: stopped at time: 20 us
+run 1000 ns
+# KERNEL: stopped at time: 21 us
+run 1000 ns
+# KERNEL: stopped at time: 22 us
+acom -work FIRFilter -2002  $DSN/src/SerialFIRFilter.vhd
+# Compile...
+# File: Z:\ECE448\LAB4\FIRFilter\src\SerialFIRFilter.vhd
+# Compile Entity "SerialFIRFilter"
+# Compile Architecture "SerialFIRFilter" of Entity "SerialFIRFilter"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.7 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.3 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1732 kB (elbread=1023 elab2=439 kernel=270 sdf=0)
+# KERNEL: ASDB file was created in location Z:\ECE448\LAB4\FIRFilter\src\wave.asdb
+#  12:58 AM, Saturday, March 06, 2010
+#  Simulation has been initialized
+#  Selected Top-Level: serialfirfilter_tb (tb_architecture)
+run 1000 ns
+# KERNEL: stopped at time: 1 us
+run 1000 ns
+# KERNEL: stopped at time: 2 us
+run 1000 ns
+# KERNEL: stopped at time: 3 us
+run 1000 ns
+# KERNEL: stopped at time: 4 us
+run 1000 ns
+# KERNEL: stopped at time: 5 us
+run 1000 ns
+# KERNEL: stopped at time: 6 us
+run 1000 ns
+# KERNEL: stopped at time: 7 us
+run 1000 ns
+# KERNEL: stopped at time: 8 us
+run 1000 ns
+# KERNEL: stopped at time: 9 us
+run 1000 ns
+# KERNEL: stopped at time: 10 us
+run 1000 ns
+# KERNEL: stopped at time: 11 us
+run 1000 ns
+# KERNEL: stopped at time: 12 us
+run 1000 ns
+# KERNEL: stopped at time: 13 us
+run 1000 ns
+# KERNEL: stopped at time: 14 us
+run 1000 ns
+# KERNEL: stopped at time: 15 us
+run 1000 ns
+# KERNEL: stopped at time: 16 us
+run 1000 ns
+# KERNEL: stopped at time: 17 us
+run 10000 ns
+# KERNEL: stopped at time: 27 us
+acom -work FIRFilter -2002  $DSN/src/SerialFIRFilter.vhd
+# Compile...
+# File: Z:\ECE448\LAB4\FIRFilter\src\SerialFIRFilter.vhd
+# Compile Entity "SerialFIRFilter"
+# Compile Architecture "SerialFIRFilter" of Entity "SerialFIRFilter"
+# Error: COMP96_0110: SerialFIRFilter.vhd : (69, 5): Signal cannot be the target of a variable assignment.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -work FIRFilter -2002  $DSN/src/SerialFIRFilter.vhd
+# Compile...
+# File: Z:\ECE448\LAB4\FIRFilter\src\SerialFIRFilter.vhd
+# Compile Entity "SerialFIRFilter"
+# Compile Architecture "SerialFIRFilter" of Entity "SerialFIRFilter"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1816 kB (elbread=1024 elab2=505 kernel=286 sdf=0)
+# KERNEL: ASDB file was created in location Z:\ECE448\LAB4\FIRFilter\src\wave.asdb
+#  1:06 AM, Saturday, March 06, 2010
+#  Simulation has been initialized
+#  Selected Top-Level: serialfirfilter_tb (tb_architecture)
+run 10000 ns
+# KERNEL: stopped at time: 10 us
+run 10000 ns
+# KERNEL: stopped at time: 20 us
+run 10000 ns
+# KERNEL: stopped at time: 30 us
+acom -work FIRFilter -2002  $DSN/src/SerialFIRFilter.vhd
+# Compile...
+# File: Z:\ECE448\LAB4\FIRFilter\src\SerialFIRFilter.vhd
+# Compile Entity "SerialFIRFilter"
+# Compile Architecture "SerialFIRFilter" of Entity "SerialFIRFilter"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.3 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1732 kB (elbread=1023 elab2=439 kernel=270 sdf=0)
+# KERNEL: ASDB file was created in location Z:\ECE448\LAB4\FIRFilter\src\wave.asdb
+#  1:08 AM, Saturday, March 06, 2010
+#  Simulation has been initialized
+#  Selected Top-Level: serialfirfilter_tb (tb_architecture)
+run 10000 ns
+# KERNEL: stopped at time: 10 us
+acom -work FIRFilter -2002  $DSN/src/SerialFIRFilter.vhd
+# Compile...
+# File: Z:\ECE448\LAB4\FIRFilter\src\SerialFIRFilter.vhd
+# Compile Entity "SerialFIRFilter"
+# Compile Architecture "SerialFIRFilter" of Entity "SerialFIRFilter"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.3 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1732 kB (elbread=1023 elab2=438 kernel=270 sdf=0)
+# KERNEL: ASDB file was created in location Z:\ECE448\LAB4\FIRFilter\src\wave.asdb
+#  1:12 AM, Saturday, March 06, 2010
+#  Simulation has been initialized
+#  Selected Top-Level: serialfirfilter_tb (tb_architecture)
+run 10000 ns
+# KERNEL: stopped at time: 10 us
+acom -work FIRFilter -2002  $DSN/src/SerialFIRFilter.vhd
+# Compile...
+# File: Z:\ECE448\LAB4\FIRFilter\src\SerialFIRFilter.vhd
+# Compile Entity "SerialFIRFilter"
+# Compile Architecture "SerialFIRFilter" of Entity "SerialFIRFilter"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.3 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.5 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1732 kB (elbread=1023 elab2=439 kernel=270 sdf=0)
+# KERNEL: ASDB file was created in location Z:\ECE448\LAB4\FIRFilter\src\wave.asdb
+#  1:14 AM, Saturday, March 06, 2010
+#  Simulation has been initialized
+#  Selected Top-Level: serialfirfilter_tb (tb_architecture)
+run 10000 ns
+# KERNEL: stopped at time: 10 us
+acom -work FIRFilter -2002  $DSN/src/SerialFIRFilter.vhd
+# Compile...
+# File: Z:\ECE448\LAB4\FIRFilter\src\SerialFIRFilter.vhd
+# Compile Entity "SerialFIRFilter"
+# Compile Architecture "SerialFIRFilter" of Entity "SerialFIRFilter"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.3 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1732 kB (elbread=1023 elab2=439 kernel=270 sdf=0)
+# KERNEL: ASDB file was created in location Z:\ECE448\LAB4\FIRFilter\src\wave.asdb
+#  1:17 AM, Saturday, March 06, 2010
+#  Simulation has been initialized
+#  Selected Top-Level: serialfirfilter_tb (tb_architecture)
+run 10000 ns
+# KERNEL: stopped at time: 10 us
+acom -work FIRFilter -2002  $DSN/src/SerialFIRFilter.vhd
+# Compile...
+# File: Z:\ECE448\LAB4\FIRFilter\src\SerialFIRFilter.vhd
+# Compile Entity "SerialFIRFilter"
+# Compile Architecture "SerialFIRFilter" of Entity "SerialFIRFilter"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.8 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.3 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1732 kB (elbread=1023 elab2=439 kernel=270 sdf=0)
+# KERNEL: ASDB file was created in location Z:\ECE448\LAB4\FIRFilter\src\wave.asdb
+#  1:18 AM, Saturday, March 06, 2010
+#  Simulation has been initialized
+#  Selected Top-Level: serialfirfilter_tb (tb_architecture)
+run 10000 ns
+# KERNEL: stopped at time: 10 us
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+# 2 signal(s) traced.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.3 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1732 kB (elbread=1023 elab2=439 kernel=270 sdf=0)
+# KERNEL: ASDB file was created in location Z:\ECE448\LAB4\FIRFilter\src\wave.asdb
+#  1:20 AM, Saturday, March 06, 2010
+#  Simulation has been initialized
+#  Selected Top-Level: serialfirfilter_tb (tb_architecture)
+run 10000 ns
+# KERNEL: stopped at time: 10 us
+acom -work FIRFilter -2002  $DSN/src/TestBench/serialfirfilter_TB.vhd
+# Compile...
+# File: Z:\ECE448\LAB4\FIRFilter\src\TestBench\serialfirfilter_TB.vhd
+# Compile Entity "serialfirfilter_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "serialfirfilter_tb"
+# Compile Configuration "TESTBENCH_FOR_serialfirfilter"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.3 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1732 kB (elbread=1023 elab2=439 kernel=270 sdf=0)
+# KERNEL: ASDB file was created in location Z:\ECE448\LAB4\FIRFilter\src\wave.asdb
+#  1:26 AM, Saturday, March 06, 2010
+#  Simulation has been initialized
+#  Selected Top-Level: serialfirfilter_tb (tb_architecture)
+run 10000 ns
+# KERNEL: stopped at time: 10 us
+acom -work FIRFilter -2002  $DSN/src/TestBench/serialfirfilter_TB.vhd
+# Compile...
+# File: Z:\ECE448\LAB4\FIRFilter\src\TestBench\serialfirfilter_TB.vhd
+# Compile Entity "serialfirfilter_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "serialfirfilter_tb"
+# Compile Configuration "TESTBENCH_FOR_serialfirfilter"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.3 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1732 kB (elbread=1023 elab2=439 kernel=270 sdf=0)
+# KERNEL: ASDB file was created in location Z:\ECE448\LAB4\FIRFilter\src\wave.asdb
+#  1:28 AM, Saturday, March 06, 2010
+#  Simulation has been initialized
+#  Selected Top-Level: serialfirfilter_tb (tb_architecture)
+run 10000 ns
+# KERNEL: stopped at time: 10 us
+acom -work FIRFilter -2002  $DSN/src/SerialFIRFilter.vhd
+# Compile...
+# File: Z:\ECE448\LAB4\FIRFilter\src\SerialFIRFilter.vhd
+# Compile Entity "SerialFIRFilter"
+# Compile Architecture "SerialFIRFilter" of Entity "SerialFIRFilter"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.4 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1732 kB (elbread=1023 elab2=439 kernel=270 sdf=0)
+# KERNEL: ASDB file was created in location Z:\ECE448\LAB4\FIRFilter\src\wave.asdb
+#  1:29 AM, Saturday, March 06, 2010
+#  Simulation has been initialized
+#  Selected Top-Level: serialfirfilter_tb (tb_architecture)
+run 10000 ns
+# KERNEL: stopped at time: 10 us
+acom -work FIRFilter -2002  $DSN/src/SerialFIRFilter.vhd
+# Compile...
+# File: Z:\ECE448\LAB4\FIRFilter\src\SerialFIRFilter.vhd
+# Compile Entity "SerialFIRFilter"
+# Compile Architecture "SerialFIRFilter" of Entity "SerialFIRFilter"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.3 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1732 kB (elbread=1023 elab2=439 kernel=270 sdf=0)
+# KERNEL: ASDB file was created in location Z:\ECE448\LAB4\FIRFilter\src\wave.asdb
+#  1:30 AM, Saturday, March 06, 2010
+#  Simulation has been initialized
+#  Selected Top-Level: serialfirfilter_tb (tb_architecture)
+run 10000 ns
+# KERNEL: stopped at time: 10 us
+acom -work FIRFilter -2002  $DSN/src/SerialFIRFilter.vhd
+# Compile...
+# File: Z:\ECE448\LAB4\FIRFilter\src\SerialFIRFilter.vhd
+# Compile Entity "SerialFIRFilter"
+# Compile Architecture "SerialFIRFilter" of Entity "SerialFIRFilter"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.3 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1732 kB (elbread=1023 elab2=439 kernel=270 sdf=0)
+# KERNEL: ASDB file was created in location Z:\ECE448\LAB4\FIRFilter\src\wave.asdb
+#  1:33 AM, Saturday, March 06, 2010
+#  Simulation has been initialized
+#  Selected Top-Level: serialfirfilter_tb (tb_architecture)
+run 10000 ns
+# KERNEL: stopped at time: 10 us
+acom -work FIRFilter -2002  $DSN/src/SerialFIRFilter.vhd
+# Compile...
+# File: Z:\ECE448\LAB4\FIRFilter\src\SerialFIRFilter.vhd
+# Compile Entity "SerialFIRFilter"
+# Compile Architecture "SerialFIRFilter" of Entity "SerialFIRFilter"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.7 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.3 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1733 kB (elbread=1023 elab2=439 kernel=270 sdf=0)
+# KERNEL: ASDB file was created in location Z:\ECE448\LAB4\FIRFilter\src\wave.asdb
+#  1:41 AM, Saturday, March 06, 2010
+#  Simulation has been initialized
+#  Selected Top-Level: serialfirfilter_tb (tb_architecture)
+run 10000 ns
+# KERNEL: stopped at time: 10 us
+acom -work FIRFilter -2002  $DSN/src/SerialFIRFilter.vhd
+# Compile...
+# File: Z:\ECE448\LAB4\FIRFilter\src\SerialFIRFilter.vhd
+# Compile Entity "SerialFIRFilter"
+# Compile Architecture "SerialFIRFilter" of Entity "SerialFIRFilter"
+# Error: COMP96_0110: SerialFIRFilter.vhd : (80, 5): Signal cannot be the target of a variable assignment.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.3 [s]
+acom -work FIRFilter -2002  $DSN/src/SerialFIRFilter.vhd
+# Compile...
+# File: Z:\ECE448\LAB4\FIRFilter\src\SerialFIRFilter.vhd
+# Compile Entity "SerialFIRFilter"
+# Compile Architecture "SerialFIRFilter" of Entity "SerialFIRFilter"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+acom -work FIRFilter -2002  $DSN/src/SerialFIRFilter.vhd
+# Compile...
+# File: Z:\ECE448\LAB4\FIRFilter\src\SerialFIRFilter.vhd
+# Compile Entity "SerialFIRFilter"
+# Compile Architecture "SerialFIRFilter" of Entity "SerialFIRFilter"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1733 kB (elbread=1023 elab2=439 kernel=270 sdf=0)
+# KERNEL: ASDB file was created in location Z:\ECE448\LAB4\FIRFilter\src\wave.asdb
+#  2:00 AM, Saturday, March 06, 2010
+#  Simulation has been initialized
+#  Selected Top-Level: serialfirfilter_tb (tb_architecture)
+run 10000 ns
+# KERNEL: stopped at time: 10 us
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.3 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1733 kB (elbread=1023 elab2=439 kernel=270 sdf=0)
+# KERNEL: ASDB file was created in location Z:\ECE448\LAB4\FIRFilter\src\wave.asdb
+#  2:00 AM, Saturday, March 06, 2010
+#  Simulation has been initialized
+#  Selected Top-Level: serialfirfilter_tb (tb_architecture)
+acom -work FIRFilter -2002  $DSN/src/SerialFIRFilter.vhd
+# Compile...
+# File: Z:\ECE448\LAB4\FIRFilter\src\SerialFIRFilter.vhd
+# Compile Entity "SerialFIRFilter"
+# Compile Architecture "SerialFIRFilter" of Entity "SerialFIRFilter"
+# Compile success 0 Errors 0 Warnings  Analysis time :  1.0 [s]
+run 10000 ns
+# KERNEL: stopped at time: 10 us
+acom -work FIRFilter -2002  $DSN/src/SerialFIRFilter.vhd
+# Compile...
+# File: Z:\ECE448\LAB4\FIRFilter\src\SerialFIRFilter.vhd
+# Compile Entity "SerialFIRFilter"
+# Compile Architecture "SerialFIRFilter" of Entity "SerialFIRFilter"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.7 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1733 kB (elbread=1023 elab2=439 kernel=270 sdf=0)
+# KERNEL: ASDB file was created in location Z:\ECE448\LAB4\FIRFilter\src\wave.asdb
+#  2:03 AM, Saturday, March 06, 2010
+#  Simulation has been initialized
+#  Selected Top-Level: serialfirfilter_tb (tb_architecture)
+run 10000 ns
+# KERNEL: stopped at time: 10 us
+endsim
+#  Simulation has been stopped
+asim -advdataflow  serialfirfilter_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.3 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1733 kB (elbread=1023 elab2=439 kernel=270 sdf=0)
+# KERNEL: ASDB file was created in location Z:\ECE448\LAB4\FIRFilter\src\wave.asdb
+#  2:04 AM, Saturday, March 06, 2010
+#  Simulation has been initialized
+#  Selected Top-Level: serialfirfilter_tb (tb_architecture)
+# 7 signal(s) traced.
+run 10000 ns
+# KERNEL: stopped at time: 10 us
+# 1 signal(s) traced.
+# 2 signal(s) traced.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1733 kB (elbread=1023 elab2=439 kernel=270 sdf=0)
+# KERNEL: ASDB file was created in location Z:\ECE448\LAB4\FIRFilter\src\wave.asdb
+#  2:06 AM, Saturday, March 06, 2010
+#  Simulation has been initialized
+#  Selected Top-Level: serialfirfilter_tb (tb_architecture)
+run 1000 ns
+# KERNEL: stopped at time: 1 us
+run 2000 ns
+# KERNEL: stopped at time: 3 us
+# 1 signal(s) traced.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.3 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1733 kB (elbread=1023 elab2=439 kernel=270 sdf=0)
+# KERNEL: ASDB file was created in location Z:\ECE448\LAB4\FIRFilter\src\wave.asdb
+#  2:18 AM, Saturday, March 06, 2010
+#  Simulation has been initialized
+#  Selected Top-Level: serialfirfilter_tb (tb_architecture)
+run 2000 ns
+# KERNEL: stopped at time: 2 us
+run 2000 ns
+# KERNEL: stopped at time: 4 us
+acom -work FIRFilter -2002  $DSN/src/SerialFIRFilter.vhd
+# Compile...
+# File: Z:\ECE448\LAB4\FIRFilter\src\SerialFIRFilter.vhd
+# Compile Entity "SerialFIRFilter"
+# Compile Architecture "SerialFIRFilter" of Entity "SerialFIRFilter"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+acom -work FIRFilter -2002  $DSN/src/SerialFIRFilter.vhd
+# Compile...
+# File: Z:\ECE448\LAB4\FIRFilter\src\SerialFIRFilter.vhd
+# Compile Entity "SerialFIRFilter"
+# Compile Architecture "SerialFIRFilter" of Entity "SerialFIRFilter"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1733 kB (elbread=1023 elab2=439 kernel=270 sdf=0)
+# KERNEL: ASDB file was created in location Z:\ECE448\LAB4\FIRFilter\src\wave.asdb
+#  2:23 AM, Saturday, March 06, 2010
+#  Simulation has been initialized
+#  Selected Top-Level: serialfirfilter_tb (tb_architecture)
+run 2000 ns
+# KERNEL: stopped at time: 2 us
+acom -work FIRFilter -2002  $DSN/src/SerialFIRFilter.vhd
+# Compile...
+# File: Z:\ECE448\LAB4\FIRFilter\src\SerialFIRFilter.vhd
+# Compile Entity "SerialFIRFilter"
+# Compile Architecture "SerialFIRFilter" of Entity "SerialFIRFilter"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.3 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.6 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1733 kB (elbread=1023 elab2=439 kernel=270 sdf=0)
+# KERNEL: ASDB file was created in location Z:\ECE448\LAB4\FIRFilter\src\wave.asdb
+#  2:27 AM, Saturday, March 06, 2010
+#  Simulation has been initialized
+#  Selected Top-Level: serialfirfilter_tb (tb_architecture)
+run 2000 ns
+# KERNEL: stopped at time: 2 us
+run 2000 ns
+# KERNEL: stopped at time: 4 us
+run 2000 ns
+# KERNEL: stopped at time: 6 us
+acom -work FIRFilter -2002  $DSN/src/SerialFIRFilter.vhd
+# Compile...
+# File: Z:\ECE448\LAB4\FIRFilter\src\SerialFIRFilter.vhd
+# Compile Entity "SerialFIRFilter"
+# Compile Architecture "SerialFIRFilter" of Entity "SerialFIRFilter"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+acom -work FIRFilter -2002  $DSN/src/SerialFIRFilter.vhd
+# Compile...
+# File: Z:\ECE448\LAB4\FIRFilter\src\SerialFIRFilter.vhd
+# Compile Entity "SerialFIRFilter"
+# Compile Architecture "SerialFIRFilter" of Entity "SerialFIRFilter"
+# Compile success 0 Errors 0 Warnings  Analysis time :  1.0 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1733 kB (elbread=1023 elab2=439 kernel=270 sdf=0)
+# KERNEL: ASDB file was created in location Z:\ECE448\LAB4\FIRFilter\src\wave.asdb
+#  2:42 AM, Saturday, March 06, 2010
+#  Simulation has been initialized
+#  Selected Top-Level: serialfirfilter_tb (tb_architecture)
+run 2000 ns
+# KERNEL: stopped at time: 2 us
+run 2000 ns
+# KERNEL: stopped at time: 4 us
+run 2000 ns
+# KERNEL: stopped at time: 6 us
+run 2000 ns
+# KERNEL: stopped at time: 8 us
+run 2000 ns
+# KERNEL: stopped at time: 10 us
+run 2000 ns
+# KERNEL: stopped at time: 12 us
+run 2000 ns
+# KERNEL: stopped at time: 14 us
+run 2000 ns
+# KERNEL: stopped at time: 16 us
+run 2000 ns
+# KERNEL: stopped at time: 18 us
+run 10000 ns
+# KERNEL: stopped at time: 28 us
+run 10000 ns
+# KERNEL: stopped at time: 38 us
+run 10000 ns
+# KERNEL: stopped at time: 48 us
+acom -work FIRFilter -2002  $DSN/src/ParallelFIRFilter.vhd
+# Compile...
+# File: Z:\ECE448\LAB4\FIRFilter\src\ParallelFIRFilter.vhd
+# Compile Entity "ParallelFIRFilter"
+# Compile Architecture "ParallelFIRFilter" of Entity "ParallelFIRFilter"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+acom -work FIRFilter -2002  $DSN/src/TestBench/parallelfirfilter_TB.vhd
+# Compile...
+# File: Z:\ECE448\LAB4\FIRFilter\src\TestBench\parallelfirfilter_TB.vhd
+# Compile Entity "parallelfirfilter_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "parallelfirfilter_tb"
+# Compile Configuration "TESTBENCH_FOR_parallelfirfilter"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+asim -advdataflow  parallelfirfilter_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.5 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1957 kB (elbread=1028 elab2=626 kernel=303 sdf=0)
+# KERNEL: AS

@@ -1,0 +1,7 @@
+i<>.\src\ZReg.vhd
+i<>.\src\ParallelFIRFilter.vhd
+i<>.\src\FIRPackage.vhd
+i<>.\src\QReg.vhd
+i<>.\src\TestBench\parallelfirfilter_TB.vhd
+i<>.\src\SerialFIRFilter.vhd
+i<>.\src\TestBench\serialfirfilter_TB.vhd

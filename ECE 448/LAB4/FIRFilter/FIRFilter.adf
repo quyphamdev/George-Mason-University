@@ -1,0 +1,59 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=FIRFilter
+
+[Library]
+FIRFilter=.\FIRFilter.LIB
+
+[$LibMap$]
+FIRFilter=.
+Active_lib=SPARTAN3E
+xilinxun=SPARTAN3E
+UnlinkedDesignLibrary=SPARTAN3E
+DESIGNS=SPARTAN3E
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=Xilinx SPARTAN3E
+
+[Groups]
+TestBench=1
+
+[Files]
+/ZReg.vhd=-1
+/ParallelFIRFilter.vhd=-1
+/FIRPackage.vhd=-1
+/QReg.vhd=-1
+/SerialFIRFilter.vhd=-1
+/Parallel_FIR_waveform.asdb=-1
+/..\..\Parallel_FIR_waveform.awc=-1
+/Serial_FIR_waveform.asdb=-1
+/..\..\Serial_FIR_waveform.awc=-1
+TestBench/parallelfirfilter_TB.vhd=-1
+TestBench/parallelfirfilter_TB_runtest.do=-1
+TestBench/serialfirfilter_TB.vhd=-1
+TestBench/serialfirfilter_TB_runtest.do=-1
+
+[Files.Data]
+.\src\ZReg.vhd=VHDL Source Code
+.\src\ParallelFIRFilter.vhd=VHDL Source Code
+.\src\FIRPackage.vhd=VHDL Source Code
+.\src\QReg.vhd=VHDL Source Code
+.\src\SerialFIRFilter.vhd=VHDL Source Code
+.\src\Parallel_FIR_waveform.asdb=Accelerated Waveform File
+.\..\Parallel_FIR_waveform.awc=Accelerated Waveform Configuration
+.\src\Serial_FIR_waveform.asdb=Accelerated Waveform File
+.\..\Serial_FIR_waveform.awc=Accelerated Waveform Configuration
+.\src\TestBench\parallelfirfilter_TB.vhd=VHDL Test Bench
+.\src\TestBench\parallelfirfilter_TB_runtest.do=Macro
+.\src\TestBench\serialfirfilter_TB.vhd=VHDL Test Bench
+.\src\TestBench\serialfirfilter_TB_runtest.do=Macro
+

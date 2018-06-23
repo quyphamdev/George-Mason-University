@@ -1,0 +1,65 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=Multiplier
+
+[Library]
+Multiplier=.\Multiplier.LIB
+
+[$LibMap$]
+Multiplier=.
+Active_lib=SPARTAN3E
+xilinxun=SPARTAN3E
+UnlinkedDesignLibrary=SPARTAN3E
+DESIGNS=SPARTAN3E
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=Xilinx SPARTAN3E
+
+[Groups]
+TestBench=1
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=combomultiplier_tb|tb_architecture|0 
+ShowHide=ShowTopLevel
+Selected=
+
+[Files]
+/ComboArrayMulCell.vhd=-1
+/ComboArrayMulCellNoN.vhd=-1
+/ComboArrayMultiplier.vhd=-1
+/ComboMultiplier.vhd=-1
+/DFFComboArrayMulCell.vhd=-1
+/DFFComboArrayMulCellNoN.vhd=-1
+/DFlipFlop.vhd=-1
+/FullAdder.vhd=-1
+/PipelineComboArrayMultiplier.vhd=-1
+TestBench/comboarraymulcell_TB.vhd=-1
+TestBench/comboarraymultiplier_TB.vhd=-1
+TestBench/combomultiplier_TB.vhd=-1
+TestBench/pipelinecomboarraymultiplier_TB.vhd=-1
+
+[Files.Data]
+.\src\ComboArrayMulCell.vhd=VHDL Source Code
+.\src\ComboArrayMulCellNoN.vhd=VHDL Source Code
+.\src\ComboArrayMultiplier.vhd=VHDL Source Code
+.\src\ComboMultiplier.vhd=VHDL Source Code
+.\src\DFFComboArrayMulCell.vhd=VHDL Source Code
+.\src\DFFComboArrayMulCellNoN.vhd=VHDL Source Code
+.\src\DFlipFlop.vhd=VHDL Source Code
+.\src\FullAdder.vhd=VHDL Source Code
+.\src\PipelineComboArrayMultiplier.vhd=VHDL Source Code
+.\src\TestBench\comboarraymulcell_TB.vhd=VHDL Source Code
+.\src\TestBench\comboarraymultiplier_TB.vhd=VHDL Source Code
+.\src\TestBench\combomultiplier_TB.vhd=VHDL Source Code
+.\src\TestBench\pipelinecomboarraymultiplier_TB.vhd=VHDL Source Code
+

@@ -1,0 +1,179 @@
+timestamp=1267205483906
+
+[comboarraymulcell]
+A/comboarraymulcell=A/ComboArrayMulCell 21|./src/comboarraymulcell.vhd|41|1*750196
+B/comboarraymulcell=3*312348
+I=0*720
+I/comboarraymulcell=I/ComboArrayMulCell 0*234893
+M=11|0|v41|1266813431577|./../../ece448lab3/multiplier/src/comboarraymulcell.vhd|0*246*0x63e2140e8f3a4397f4e24f3c704cab00562c4439|0*605*0xa21b273bdc144137564d3fdae1d126f0
+M/comboarraymulcell=M/ComboArrayMulCell 21|0|v41|1267141682918|./src/comboarraymulcell.vhd|0*234301*0x69ad91897eeddcd8a41bb8df973e1f94eaab9d9a|0*234785*0xa21b273bdc144137564d3fdae1d126f0
+R=./../../ece448lab3/multiplier/src/comboarraymulcell.vhd|28
+
+[comboarraymulcell_tb]
+A/tb_architecture=A/TB_ARCHITECTURE 21|./src/testbench/comboarraymulcell_tb.vhd|29|1*782601
+B/tb_architecture=3*349360
+I=0*13959
+I/tb_architecture=I/TB_ARCHITECTURE 0*18599
+M=11|0|v41|1266815995202|./src/TestBench/comboarraymulcell_TB.vhd|0*13648*0xa94c0a9e861fc2289014f998e1c2a80985d71819|0*13856*0xa21b273bdc144137564d3fdae1d126f0
+M/tb_architecture=M/TB_ARCHITECTURE 21|0|v41|1267141686014|./src/TestBench/comboarraymulcell_TB.vhd|0*17787*0xd40d495f73e3e9ffa35f9ac3a2c5365355c7355f|0*18477*0xa21b273bdc144137564d3fdae1d126f0
+R=./src/TestBench/comboarraymulcell_TB.vhd|26
+
+[comboarraymulcellnon]
+A/comboarraymulcellnon=A/ComboArrayMulCellNoN 21|./src/comboarraymulcellnon.vhd|40|1*752270
+I=0*2245
+I/comboarraymulcellnon=I/ComboArrayMulCellNoN 0*235635
+M=11|0|v41|1266813431952|./../../ece448lab3/multiplier/src/comboarraymulcellnon.vhd|0*1781*0xbe7b768f2604a10b08482bf27b4631f1c90e6b47|0*2124*0xa21b273bdc144137564d3fdae1d126f0
+M/comboarraymulcellnon=M/ComboArrayMulCellNoN 21|0|v41|1267141683450|./src/comboarraymulcellnon.vhd|0*235079*0xab2eeddc5e56f794e5947dcad3ff22100cdaa748|0*235518*0xa21b273bdc144137564d3fdae1d126f0
+R=./../../ece448lab3/multiplier/src/comboarraymulcellnon.vhd|28
+
+[comboarraymultiplier]
+A/comboarraymultiplier=A/ComboArrayMultiplier 21|./src/ComboArrayMultiplier.vhd|39|1*809773
+B/comboarraymultiplier=3*372718
+I=0*20119
+I/comboarraymultiplier=I/ComboArrayMultiplier 0*252505
+M=11|0|v41|1266836057409|./../../ECE448Lab3/Multiplier/src/ComboArrayMultiplier.vhd|0*19612*0x36cf07e0d17394fec57c3ff89b6a022f3748a3f5|0*19998*0xa21b273bdc144137564d3fdae1d126f0
+M/comboarraymultiplier=M/ComboArrayMultiplier 21|0|v41|1267205483218|./src/ComboArrayMultiplier.vhd|0*250842*0xaafb99e08f285fa4ef3d85f47db9c898f07c4743|0*252388*0xa21b273bdc144137564d3fdae1d126f0
+R=./../../ECE448Lab3/Multiplier/src/ComboArrayMultiplier.vhd|28
+
+[comboarraymultiplier_tb]
+A/tb_architecture=A/TB_ARCHITECTURE 21|./src/TestBench/comboarraymultiplier_TB.vhd|33|1*801296
+B/tb_architecture=3*362408
+I=0*248465
+I/tb_architecture=I/TB_ARCHITECTURE 0*249785
+M=11|0|v41|1267142579792|./src/TestBench/comboarraymultiplier_TB.vhd|0*248079*0xa15638b1f1882ead35396b885315f6c63b0e0b48|0*248356*0xa21b273bdc144137564d3fdae1d126f0
+M/tb_architecture=M/TB_ARCHITECTURE 21|0|v41|1267142699393|./src/TestBench/comboarraymultiplier_TB.vhd|0*248644*0x4f0caf3bf091edaef74f3f5f689cb482e7c9f291|0*249657*0xa21b273bdc144137564d3fdae1d126f0
+R=./src/TestBench/comboarraymultiplier_TB.vhd|27
+
+[combomultiplier]
+A/combomultiplier=A/ComboMultiplier 21|./src/combomultiplier.vhd|40|1*759953
+B/combomultiplier=3*321532
+I=0*6826
+I/combomultiplier=I/ComboMultiplier 0*238108
+M=11|0|v41|1266813432202|./../../ece448lab3/multiplier/src/combomultiplier.vhd|0*6296*0xa381a5f00de71cd082d9cdde489d0941f0909960|0*6715*0xa21b273bdc144137564d3fdae1d126f0
+M/combomultiplier=M/ComboMultiplier 21|0|v41|1267141683951|./src/combomultiplier.vhd|0*237757*0x943b9f52e3c49409823a0a3452224d7340a42192|0*238006*0xa21b273bdc144137564d3fdae1d126f0
+R=./../../ece448lab3/multiplier/src/combomultiplier.vhd|29
+
+[combomultiplier_tb]
+A/tb_architecture=A/TB_ARCHITECTURE 21|./src/testbench/combomultiplier_tb.vhd|13|1*789504
+B/tb_architecture=3*355338
+I=0*246110
+I/tb_architecture=I/TB_ARCHITECTURE 0*247138
+M=11|0|v41|1267141687371|./src/testbench/combomultiplier_tb.vhd|0*245747*0x049f535ee89deb564497ae66ae78524d860e4d30|0*246011*0xa21b273bdc144137564d3fdae1d126f0
+M/tb_architecture=M/TB_ARCHITECTURE 21|0|v41|1267141687402|./src/testbench/combomultiplier_tb.vhd|0*246291*0xfbbce9644c6654491c89e3a71152e6690993656b|0*247020*0xa21b273bdc144137564d3fdae1d126f0
+R=./src/testbench/combomultiplier_tb.vhd|7
+
+[dffcomboarraymulcell]
+A/dffcomboarraymulcell=A/DFFComboArrayMulCell 21|./src/dffcomboarraymulcell.vhd|43|1*761903
+B/dffcomboarraymulcell=3*323099
+I=0*130248
+I/dffcomboarraymulcell=I/DFFComboArrayMulCell 0*239295
+M=11|0|v41|1266908879376|./src/DFFComboArrayMulCell.vhd|0*129764*0xa9360e89684cdb66fdc62ddb998f0aa59f6d49d1|0*130155*0xa21b273bdc144137564d3fdae1d126f0
+M/dffcomboarraymulcell=M/DFFComboArrayMulCell 21|0|v41|1267141684264|./src/dffcomboarraymulcell.vhd|0*238302*0x8f0c76e90b956ff9ff71b40376da478a1859893a|0*239178*0xa21b273bdc144137564d3fdae1d126f0
+R=./src/DFFComboArrayMulCell.vhd|28
+
+[dffcomboarraymulcellnon]
+A/dffcomboarraymulcellnon=A/DFFComboArrayMulCellNoN 21|./src/dffcomboarraymulcellnon.vhd|41|1*765057
+I=0*132311
+I/dffcomboarraymulcellnon=I/DFFComboArrayMulCellNoN 0*240429
+M=11|0|v41|1266909350236|./src/DFFComboArrayMulCellNoN.vhd|0*131862*0x99934934ee7c54d3d3ab2d83b3492ed8b24e22d9|0*132212*0xa21b273bdc144137564d3fdae1d126f0
+M/dffcomboarraymulcellnon=M/DFFComboArrayMulCellNoN 21|0|v41|1267141684511|./src/dffcomboarraymulcellnon.vhd|0*239543*0xe7ec095ae9b23aabaf6bd63ca2a3d38f69fb0c38|0*240303*0xa21b273bdc144137564d3fdae1d126f0
+R=./src/DFFComboArrayMulCellNoN.vhd|28
+
+[dflipflop]
+A/dflipflop=A/DFlipFlop 21|./src/dflipflop.vhd|38|1*767636
+B/dflipflop=3*323622
+I=0*125914
+I/dflipflop=I/DFlipFlop 0*240943
+M=11|0|v41|1266907100705|./src/DFlipFlop.vhd|0*125617*0xe8cb740d7f4861a1a125702d4c6275355c111c63|0*125843*0xa21b273bdc144137564d3fdae1d126f0
+M/dflipflop=M/DFlipFlop 21|0|v41|1267141684592|./src/dflipflop.vhd|0*240683*0xb75d18ff939037f223f8910bf55c046d37f51d5c|0*240859*0xa21b273bdc144137564d3fdae1d126f0
+R=./src/DFlipFlop.vhd|28
+
+[fulladder]
+A/fulladder=A/FullAdder 21|./src/fulladder.vhd|40|1*768594
+B/fulladder=3*324062
+I=0*8198
+I/fulladder=I/FullAdder 0*241356
+M=11|0|v41|1266813432327|./../../ece448lab3/multiplier/src/fulladder.vhd|0*7801*0x4aa6a734df360f00e9430d1b2e494a7eee654fe8|0*8099*0xa21b273bdc144137564d3fdae1d126f0
+M/fulladder=M/FullAdder 21|0|v41|1267141684999|./src/fulladder.vhd|0*241056*0x964168d6593f175c9739e32839219aabf561df2e|0*241272*0xa21b273bdc144137564d3fdae1d126f0
+R=./../../ece448lab3/multiplier/src/fulladder.vhd|28
+
+[pipelinecomboarraymulcell]
+A/pipelinecomboarraymulcell=A/PipelineComboArrayMulCell 21|./src/PipelineComboArrayMulCell.vhd|43|1*420700
+B/pipelinecomboarraymulcell=3*158686
+I=0*128051
+I/pipelinecomboarraymulcell=I/PipelineComboArrayMulCell 0*129208
+M=11|0|v41|1266908598720|./src/PipelineComboArrayMulCell.vhd|0*127537*0x262b894e2962adf7618c76ed476c17c0a1f65212|0*127948*0xa21b273bdc144137564d3fdae1d126f0
+M/pipelinecomboarraymulcell=M/PipelineComboArrayMulCell 21|0|v41|1266908598751|./src/PipelineComboArrayMulCell.vhd|0*128170*0xa8b909e8bb4a7c41b603538559be92a1d27bb89e|0*129076*0xa21b273bdc144137564d3fdae1d126f0
+R=./src/PipelineComboArrayMulCell.vhd|28
+
+[pipelinecomboarraymultiplier]
+A/pipelinecomboarraymultiplier=A/PipelineComboArrayMultiplier 21|./src/pipelinecomboarraymultiplier.vhd|40|1*769867
+B/pipelinecomboarraymultiplier=3*325155
+I=0*134393
+I/pipelinecomboarraymultiplier=I/PipelineComboArrayMultiplier 0*245268
+M=11|0|v41|1266912828220|./src/PipelineComboArrayMultiplier.vhd|0*133871*0xc7dc3325c57140a05bfa3b744926395a25cc8218|0*134284*0xa21b273bdc144137564d3fdae1d126f0
+M/pipelinecomboarraymultiplier=M/PipelineComboArrayMultiplier 21|0|v41|1267141685420|./src/pipelinecomboarraymultiplier.vhd|0*241469*0x335d2f062edfd096d050410ab78bbeaa7e4d215d|0*245127*0xa21b273bdc144137564d3fdae1d126f0
+R=./src/PipelineComboArrayMultiplier.vhd|28
+
+[pipelinecomboarraymultiplier_tb]
+A/tb_architecture=A/TB_ARCHITECTURE 21|./src/TestBench/pipelinecomboarraymultiplier_TB.vhd|33|1*805324
+B/tb_architecture=3*367207
+I=0*250655
+I/tb_architecture=I/TB_ARCHITECTURE 0*205374
+M=11|0|v41|1267142813809|./src/TestBench/pipelinecomboarraymultiplier_TB.vhd|0*250221*0xc200f668154f9ea202c477f4026eadda93ae0cb7|0*250530*0xa21b273bdc144137564d3fdae1d126f0
+M/tb_architecture=M/TB_ARCHITECTURE 21|0|v41|1267142813889|./src/TestBench/pipelinecomboarraymultiplier_TB.vhd|0*204017*0xe3f4ebd61e34c507cae203829e5d58ab025c3176|0*205230*0xa21b273bdc144137564d3fdae1d126f0
+R=./src/TestBench/pipelinecomboarraymultiplier_TB.vhd|27
+
+[testbench_for_comboarraymulcell]
+E=1*785032
+I=0*19293
+M=2|0|v41|1267141686685|./src/TestBench/comboarraymulcell_TB.vhd|0*18794*0x8681738e1f666378772a9a0104902f3c43470462|0*19156*0xa21b273bdc144137564d3fdae1d126f0
+R=./src/testbench/comboarraymulcell_tb.vhd|73
+
+[testbench_for_comboarraymultiplier]
+E=1*804779
+I=0*121381
+M=2|0|v41|1267142699689|./src/TestBench/comboarraymultiplier_TB.vhd|0*120846*0xcafa63106d79a7296ec7914aa55289b80ba593bc|0*121235*0xa21b273bdc144137564d3fdae1d126f0
+R=./src/TestBench/comboarraymultiplier_TB.vhd|86
+
+[testbench_for_combomultiplier]
+E=1*792297
+I=0*247872
+M=2|0|v41|1267141687792|./src/testbench/combomultiplier_tb.vhd|0*247397*0x4769068c24598b188be3e852f885911a68e677db|0*247741*0xa21b273bdc144137564d3fdae1d126f0
+R=./src/testbench/combomultiplier_tb.vhd|57
+
+[testbench_for_pipelinecomboarraymultiplier]
+E=1*809161
+I=0*203946
+M=2|0|v41|1267142814467|./src/TestBench/pipelinecomboarraymultiplier_TB.vhd|0*203315*0x81a7fc5a0901465b198dcd3579295c536f243711|0*203776*0xa21b273bdc144137564d3fdae1d126f0
+R=./src/TestBench/pipelinecomboarraymultiplier_TB.vhd|99
+
+[~A]
+ModifyID=1079
+Version=73
+
+[~MFT]
+0=809|0Multiplier.mgf|252505|179705
+1=444|1Multiplier.mgf|809773|726333
+3=305|3Multiplier.mgf|372718|330794
+
+[~U]
+comboarraymulcell=ComboArrayMulCell 11|0*0|
+comboarraymulcell_tb=11|0*13547|
+comboarraymulcellnon=ComboArrayMulCellNoN 11|0*1551|
+comboarraymultiplier=11|0*19353|
+comboarraymultiplier_tb=11|0*247930|
+combomultiplier=ComboMultiplier 11|0*6046|
+combomultiplier_tb=11|0*245613|
+dffcomboarraymulcell=DFFComboArrayMulCell 11|0*129466|
+dffcomboarraymulcellnon=DFFComboArrayMulCellNoN 11|0*131603|
+dflipflop=DFlipFlop 11|0*125460|
+fulladder=FullAdder 11|0*7605|
+pipelinecomboarraymulcell=PipelineComboArrayMulCell 11|0*127224|
+pipelinecomboarraymultiplier=PipelineComboArrayMultiplier 11|0*133568|
+pipelinecomboarraymultiplier_tb=11|0*250047|
+testbench_for_comboarraymulcell=TESTBENCH_FOR_comboarraymulcell 2||
+testbench_for_comboarraymultiplier=TESTBENCH_FOR_comboarraymultiplier 2||
+testbench_for_combomultiplier=TESTBENCH_FOR_combomultiplier 2||
+testbench_for_pipelinecomboarraymultiplier=TESTBENCH_FOR_pipelinecomboarraymultiplier 2||
+

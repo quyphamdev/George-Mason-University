@@ -1,0 +1,18 @@
+elbread.dll ver. 1.0.5.375 Wed Mar 03 00:16:50 2010
+
+
+--------------------------------------------------
+Entity              | Architecture    | Library 
+--------------------------------------------------
+combomultiplier_tb  | tb_architecture | Multiplier
+combomultiplier     | combomultiplier | multiplier
+--------------------------------------------------
+
+-----------------------------
+Package             | Library
+-----------------------------
+standard            | std
+std_logic_1164      | ieee
+std_logic_arith     | ieee
+std_logic_unsigned  | ieee
+-----------------------------
