@@ -1,0 +1,10 @@
+.\src\InstrDecode.vhd
+.\src\extend.vhd
+.\src\Control.vhd
+.\src\misp32_package.vhd
+.\src\alu.vhd
+.\src\mux2.vhd
+.\src\TopLevel.vhd
+.\src\TestBench\toplevel_TB.vhd
+.\src\TestBench\control_TB.vhd
+.\src\TestBench\alu_TB.vhd

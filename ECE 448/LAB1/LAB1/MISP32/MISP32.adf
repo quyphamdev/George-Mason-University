@@ -1,0 +1,73 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=MISP32
+
+[Library]
+MISP32=.\MISP32.LIB
+
+[$LibMap$]
+MISP32=.
+Active_lib=SPARTAN3
+xilinxun=SPARTAN3
+UnlinkedDesignLibrary=SPARTAN3
+DESIGNS=SPARTAN3
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=Xilinx SPARTAN3
+
+[Groups]
+TestBench=1
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=alu_tb|tb_architecture|0 control|control|0 control_tb|tb_architecture|0 toplevel_tb|tb_architecture|0
+ShowHide=ShowTopLevel
+Selected=
+
+[Files]
+/InstrDecode.vhd=-1
+/extend.vhd=-1
+/Control.vhd=-1
+/misp32_package.vhd=-1
+/alu.vhd=-1
+/mux2.vhd=-1
+/TopLevel.vhd=-1
+/bonus_shifters.asdb=-1
+/bonus_shifters.awc=-1
+/lab1wf_no_shifters.asdb=-1
+/lab1wf_no_shifters.awc=-1
+TestBench/toplevel_TB.vhd=-1
+TestBench/toplevel_TB_runtest.do=-1
+TestBench/control_TB.vhd=-1
+TestBench/control_TB_runtest.do=-1
+TestBench/alu_TB.vhd=-1
+TestBench/alu_TB_runtest.do=-1
+
+[Files.Data]
+.\src\InstrDecode.vhd=VHDL Source Code
+.\src\extend.vhd=VHDL Source Code
+.\src\Control.vhd=VHDL Source Code
+.\src\misp32_package.vhd=VHDL Source Code
+.\src\alu.vhd=VHDL Source Code
+.\src\mux2.vhd=VHDL Source Code
+.\src\TopLevel.vhd=VHDL Source Code
+.\src\bonus_shifters.asdb=Accelerated Waveform File
+.\src\bonus_shifters.awc=Accelerated Waveform Configuration
+.\src\lab1wf_no_shifters.asdb=Accelerated Waveform File
+.\src\lab1wf_no_shifters.awc=Accelerated Waveform Configuration
+.\src\TestBench\toplevel_TB.vhd=VHDL Test Bench
+.\src\TestBench\toplevel_TB_runtest.do=Macro
+.\src\TestBench\control_TB.vhd=VHDL Test Bench
+.\src\TestBench\control_TB_runtest.do=Macro
+.\src\TestBench\alu_TB.vhd=VHDL Test Bench
+.\src\TestBench\alu_TB_runtest.do=Macro
+

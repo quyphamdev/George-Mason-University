@@ -1,0 +1,6 @@
+[Version]
+Version=7.3
+[Designs]
+trivium=.\Trivium\Trivium.adf
+[Expand]
+trivium=1

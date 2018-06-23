@@ -1,0 +1,49 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=Trivium
+
+[Library]
+Trivium=.\Trivium.LIB
+
+[$LibMap$]
+Trivium=.
+Active_lib=SPARTAN3E
+xilinxun=SPARTAN3E
+UnlinkedDesignLibrary=SPARTAN3E
+DESIGNS=SPARTAN3E
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=Xilinx SPARTAN3E
+
+[Groups]
+TestBench=1
+
+[Files]
+/Counter10b.vhd=-1
+/CntThreshold.vhd=-1
+/KeystreamGen.vhd=-1
+/TopLevel.vhd=-1
+/two_bits_1clk.asdb=-1
+/two_bits_1clk.awc=-1
+TestBench/toplevel_TB.vhd=-1
+TestBench/toplevel_TB_runtest.do=-1
+
+[Files.Data]
+.\src\Counter10b.vhd=VHDL Source Code
+.\src\CntThreshold.vhd=VHDL Source Code
+.\src\KeystreamGen.vhd=VHDL Source Code
+.\src\TopLevel.vhd=VHDL Source Code
+.\src\two_bits_1clk.asdb=Accelerated Waveform File
+.\src\two_bits_1clk.awc=Accelerated Waveform Configuration
+.\src\TestBench\toplevel_TB.vhd=VHDL Test Bench
+.\src\TestBench\toplevel_TB_runtest.do=Macro
+
