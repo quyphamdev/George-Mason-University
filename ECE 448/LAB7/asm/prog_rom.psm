@@ -1,0 +1,70 @@
+; variables
+NAMEREG s0, port_id
+NAMEREG s1, out_port
+NAMEREG s2, in_port
+
+; port id to external registers
+CONSTANT BUTTON_REG,  		   00
+CONSTANT SSD3_REG, 	  		   01
+CONSTANT SSD2_REG, 	  		   02
+CONSTANT SSD1_REG, 	  		   03
+CONSTANT SSD0_REG, 	  		   04
+CONSTANT PRNG_STATUS_REG, 	   06
+CONSTANT PRNG_CTRL_REG,		   07
+CONSTANT SWITCH_REG,		   08
+CONSTANT INIT_REG, 			   09
+CONSTANT MEM_BANK_REG,		   FF
+;
+
+
+start:
+	  	; first, we configure the data ram
+	  	; all mem in ram should have values of its address
+	  	CALL enable_mem_bank		 		; turn on mem_bank to access to higher address
+	  	LOAD out_port, 01 			 		; data to write
+	  	OUTPUT out_port, INIT_REG 	 		; write to init register to enable PRNG
+check_init:
+		INPUT in_port, PRNG_STATUS_REG		; check init status
+		COMPARE in_port, 01
+		JUMP nz, check_init			  		; while not done with initialization, jump back
+		LOAD out_port, 00
+		OUTPUT out_port, INIT_REG	  		; done init, clear flag
+	  	; show value of data ram at address 7
+	  	; first read data ram at that address
+	  	CALL disable_mem_bank
+	  	INPUT in_port, 07	  	 	  		 ; read ram(7)
+	  	CALL enable_mem_bank
+	  	LOAD out_port, 07					
+	  	OUTPUT out_port, SSD3_REG			 ; write ram address to 7seg 3
+	  	OUTPUT out_port, SSD2_REG			 ; write ram address to 7seg 2
+	  	OUTPUT in_port, SSD1_REG			 ; ram data to 7seg 1 and 0
+	  	OUTPUT in_port, SSD0_REG
+	  	
+	  	ENABLE INTERRUPT 					; enable global interrupt to check on buttons press
+wait:
+	 	JUMP wait	  	
+
+enable_mem_bank:
+				LOAD out_port, 01
+				OUTPUT out_port, MEM_BANK_REG
+				RETURN
+				
+disable_mem_bank:
+				LOAD out_port, 00
+				OUTPUT out_port, MEM_BANK_REG
+				RETURN
+				
+ISR:
+	CALL enable_mem_bank
+	LOAD out_port, 1F
+	OUTPUT out_port, SSD1_REG
+	OUTPUT out_port, SSD0_REG
+	; check which button is pressed
+	INPUT in_port, BUTTON_REG
+	TEST in_port,
+	RETURNI ENABLE	 		 	 ; back to prog, enable int so next int handling
+				
+; END OF PROG
+; address to interrupt routine
+  		  	 ADDRESS   3FF
+  		  	 JUMP ISR

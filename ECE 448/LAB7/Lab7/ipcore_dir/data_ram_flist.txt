@@ -1,0 +1,14 @@
+# Output products list for <data_ram>
+data_ram.asy
+data_ram.gise
+data_ram.ise
+data_ram.ngc
+data_ram.sym
+data_ram.v
+data_ram.veo
+data_ram.vhd
+data_ram.vho
+data_ram.xco
+data_ram.xise
+data_ram_flist.txt
+data_ram_xmdf.tcl
