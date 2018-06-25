@@ -1,0 +1,4 @@
+/Users/jasonmac/Documents/BluetoothECG/Classes/BluetoothECGAppDelegate.m: In function 'packet_handler':
+/Users/jasonmac/Documents/BluetoothECG/Classes/BluetoothECGAppDelegate.m:288: error: 'addr' undeclared (first use in this function)
+/Users/jasonmac/Documents/BluetoothECG/Classes/BluetoothECGAppDelegate.m:288: error: (Each undeclared identifier is reported only once
+/Users/jasonmac/Documents/BluetoothECG/Classes/BluetoothECGAppDelegate.m:288: error: for each function it appears in.)

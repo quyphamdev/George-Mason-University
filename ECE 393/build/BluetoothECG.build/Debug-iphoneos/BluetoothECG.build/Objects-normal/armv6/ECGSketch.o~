@@ -1,0 +1,11 @@
+/Users/jasonmac/Documents/BluetoothECG/Classes/ECGSketch.m: In function '-[ECGSketch viewDidLoad]':
+/Users/jasonmac/Documents/BluetoothECG/Classes/ECGSketch.m:29: error: 'graph' undeclared (first use in this function)
+/Users/jasonmac/Documents/BluetoothECG/Classes/ECGSketch.m:29: error: (Each undeclared identifier is reported only once
+/Users/jasonmac/Documents/BluetoothECG/Classes/ECGSketch.m:29: error: for each function it appears in.)
+/Users/jasonmac/Documents/BluetoothECG/Classes/ECGSketch.m:29: error: 'CPXYGraph' undeclared (first use in this function)
+/Users/jasonmac/Documents/BluetoothECG/Classes/ECGSketch.m:30: error: 'CPTheme' undeclared (first use in this function)
+/Users/jasonmac/Documents/BluetoothECG/Classes/ECGSketch.m:30: error: 'theme' undeclared (first use in this function)
+/Users/jasonmac/Documents/BluetoothECG/Classes/ECGSketch.m:30: error: 'kCPDarkGradientTheme' undeclared (first use in this function)
+/Users/jasonmac/Documents/BluetoothECG/Classes/ECGSketch.m:32: error: 'CPLayerHostingView' undeclared (first use in this function)
+/Users/jasonmac/Documents/BluetoothECG/Classes/ECGSketch.m:32: error: 'hostingView' undeclared (first use in this function)
+/Users/jasonmac/Documents/BluetoothECG/Classes/ECGSketch.m:32: error: expected expression before ')' token
