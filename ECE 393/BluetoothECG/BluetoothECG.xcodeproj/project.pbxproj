@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* BluetoothECGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* BluetoothECGAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
+		9E250D1E114F1C6C005F129A /* ECGSketch.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E250D1C114F1C6C005F129A /* ECGSketch.m */; };
+		9E250D1F114F1C6C005F129A /* ECGSketch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E250D1D114F1C6C005F129A /* ECGSketch.xib */; };
+		9E250D73114F3E47005F129A /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E250D72114F3E18005F129A /* libCorePlot-CocoaTouch.a */; };
+		9E250DC0114F4093005F129A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E250DBF114F4093005F129A /* QuartzCore.framework */; };
+		9E2ADF811127B743008D6FB6 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E2ADF801127B743008D6FB6 /* Icon.png */; };
+		9E35C4861126360400FEFD06 /* BTInquiryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E35C4851126360400FEFD06 /* BTInquiryViewController.m */; };
+		9E35C4891126363300FEFD06 /* BTDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E35C4881126363300FEFD06 /* BTDevice.m */; };
+		9E35C6C8112677CC00FEFD06 /* btstack.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E35C6AF112677CC00FEFD06 /* btstack.c */; };
+		9E35C6CA112677CC00FEFD06 /* hci.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E35C6B1112677CC00FEFD06 /* hci.c */; };
+		9E35C6CB112677CC00FEFD06 /* hci_cmds.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E35C6B3112677CC00FEFD06 /* hci_cmds.c */; };
+		9E35C6D1112677CC00FEFD06 /* linked_list.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E35C6BF112677CC00FEFD06 /* linked_list.c */; };
+		9E35C6D3112677CC00FEFD06 /* run_loop.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E35C6C2112677CC00FEFD06 /* run_loop.c */; };
+		9E35C6D7112677CC00FEFD06 /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E35C6C7112677CC00FEFD06 /* utils.c */; };
+		9E35C79511267C1100FEFD06 /* l2cap.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E35C79111267C1100FEFD06 /* l2cap.c */; };
+		9E35C79611267C1100FEFD06 /* socket_connection.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E35C79311267C1100FEFD06 /* socket_connection.c */; };
+		9E35C79B11267C8300FEFD06 /* l2cap_signaling.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E35C79911267C8300FEFD06 /* l2cap_signaling.c */; };
+		9E35C79F11267CA900FEFD06 /* hci_dump.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E35C79D11267CA900FEFD06 /* hci_dump.c */; };
+		9E35C7AB11267D4800FEFD06 /* run_loop_cocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E35C7A911267D4800FEFD06 /* run_loop_cocoa.m */; };
+		9E35C7AC11267D4800FEFD06 /* run_loop_posix.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E35C7AA11267D4800FEFD06 /* run_loop_posix.c */; };
+		9E35C7C411267DC100FEFD06 /* hci_transport_h4.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E35C7BD11267DC100FEFD06 /* hci_transport_h4.c */; };
+		9E35C7C511267DC100FEFD06 /* platform_iphone.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E35C7BF11267DC100FEFD06 /* platform_iphone.c */; };
+		9E35C7C611267DC100FEFD06 /* SpringBoardAccess.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E35C7C111267DC100FEFD06 /* SpringBoardAccess.c */; };
+		9EDB4FE31130C32A006ED6A1 /* rfcomm.c in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB4FE21130C32A006ED6A1 /* rfcomm.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9E250D71114F3E18005F129A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E250D6C114F3E18005F129A /* CorePlot-CocoaTouch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC9B83470FB8A0A40035D8DA /* libCorePlot-CocoaTouch.a */;
+			remoteInfo = "CorePlot-CocoaTouch";
+		};
+		9E250DB8114F3ED4005F129A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E250D6C114F3E18005F129A /* CorePlot-CocoaTouch.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BC9B83460FB8A0A40035D8DA /* CorePlot-CocoaTouch */;
+			remoteInfo = "CorePlot-CocoaTouch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* BluetoothECGAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothECGAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* BluetoothECGAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluetoothECGAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* BluetoothECG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluetoothECG.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28A0AAE50D9B0CCF005BE974 /* BluetoothECG_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothECG_Prefix.pch; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* BluetoothECG-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BluetoothECG-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		9E250D1B114F1C6C005F129A /* ECGSketch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECGSketch.h; sourceTree = "<group>"; };
+		9E250D1C114F1C6C005F129A /* ECGSketch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECGSketch.m; sourceTree = "<group>"; };
+		9E250D1D114F1C6C005F129A /* ECGSketch.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ECGSketch.xib; path = Classes/ECGSketch.xib; sourceTree = "<group>"; };
+		9E250D6C114F3E18005F129A /* CorePlot-CocoaTouch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "CorePlot-CocoaTouch.xcodeproj"; path = "../core-plot/framework/CorePlot-CocoaTouch.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		9E250DBF114F4093005F129A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
+		9E2ADF801127B743008D6FB6 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		9E35C4841126360400FEFD06 /* BTInquiryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTInquiryViewController.h; sourceTree = "<group>"; };
+		9E35C4851126360400FEFD06 /* BTInquiryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTInquiryViewController.m; sourceTree = "<group>"; };
+		9E35C4871126363300FEFD06 /* BTDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTDevice.h; sourceTree = "<group>"; };
+		9E35C4881126363300FEFD06 /* BTDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTDevice.m; sourceTree = "<group>"; };
+		9E35C6AF112677CC00FEFD06 /* btstack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = btstack.c; sourceTree = "<group>"; };
+		9E35C6B1112677CC00FEFD06 /* hci.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hci.c; sourceTree = "<group>"; };
+		9E35C6B2112677CC00FEFD06 /* hci.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hci.h; sourceTree = "<group>"; };
+		9E35C6B3112677CC00FEFD06 /* hci_cmds.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hci_cmds.c; sourceTree = "<group>"; };
+		9E35C6BF112677CC00FEFD06 /* linked_list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = linked_list.c; sourceTree = "<group>"; };
+		9E35C6C2112677CC00FEFD06 /* run_loop.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = run_loop.c; sourceTree = "<group>"; };
+		9E35C6C7112677CC00FEFD06 /* utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utils.c; sourceTree = "<group>"; };
+		9E35C6D81126780600FEFD06 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		9E35C6E41126782700FEFD06 /* linked_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = linked_list.h; sourceTree = "<group>"; };
+		9E35C6E91126783A00FEFD06 /* run_loop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = run_loop.h; sourceTree = "<group>"; };
+		9E35C6EA1126784D00FEFD06 /* hci_cmds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hci_cmds.h; sourceTree = "<group>"; };
+		9E35C6EB1126787300FEFD06 /* btstack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = btstack.h; sourceTree = "<group>"; };
+		9E35C78E11267BD900FEFD06 /* bt_control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bt_control.h; sourceTree = "<group>"; };
+		9E35C78F11267BD900FEFD06 /* hci_transport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hci_transport.h; sourceTree = "<group>"; };
+		9E35C79111267C1100FEFD06 /* l2cap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = l2cap.c; sourceTree = "<group>"; };
+		9E35C79211267C1100FEFD06 /* l2cap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = l2cap.h; sourceTree = "<group>"; };
+		9E35C79311267C1100FEFD06 /* socket_connection.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = socket_connection.c; sourceTree = "<group>"; };
+		9E35C79411267C1100FEFD06 /* socket_connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = socket_connection.h; sourceTree = "<group>"; };
+		9E35C79711267C3000FEFD06 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		9E35C79911267C8300FEFD06 /* l2cap_signaling.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = l2cap_signaling.c; sourceTree = "<group>"; };
+		9E35C79A11267C8300FEFD06 /* l2cap_signaling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = l2cap_signaling.h; sourceTree = "<group>"; };
+		9E35C79D11267CA900FEFD06 /* hci_dump.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hci_dump.c; sourceTree = "<group>"; };
+		9E35C79E11267CA900FEFD06 /* hci_dump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hci_dump.h; sourceTree = "<group>"; };
+		9E35C7A911267D4800FEFD06 /* run_loop_cocoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = run_loop_cocoa.m; sourceTree = "<group>"; };
+		9E35C7AA11267D4800FEFD06 /* run_loop_posix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = run_loop_posix.c; sourceTree = "<group>"; };
+		9E35C7BD11267DC100FEFD06 /* hci_transport_h4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hci_transport_h4.c; sourceTree = "<group>"; };
+		9E35C7BE11267DC100FEFD06 /* hci_transport_h4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hci_transport_h4.h; sourceTree = "<group>"; };
+		9E35C7BF11267DC100FEFD06 /* platform_iphone.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = platform_iphone.c; sourceTree = "<group>"; };
+		9E35C7C011267DC100FEFD06 /* platform_iphone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = platform_iphone.h; sourceTree = "<group>"; };
+		9E35C7C111267DC100FEFD06 /* SpringBoardAccess.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SpringBoardAccess.c; sourceTree = "<group>"; };
+		9E35C7C211267DC100FEFD06 /* SpringBoardAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpringBoardAccess.h; sourceTree = "<group>"; };
+		9EDB4FDF1130C32A006ED6A1 /* rfcomm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rfcomm.h; sourceTree = "<group>"; };
+		9EDB4FE21130C32A006ED6A1 /* rfcomm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rfcomm.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E250D73114F3E47005F129A /* libCorePlot-CocoaTouch.a in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */,
+				9E250DC0114F4093005F129A /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9EDB4FDE1130C32A006ED6A1 /* rfcomm */,
+				9E35C48D1126379800FEFD06 /* btstack */,
+				9E35C4831126358200FEFD06 /* Inquiry */,
+				9E250D1B114F1C6C005F129A /* ECGSketch.h */,
+				9E250D1C114F1C6C005F129A /* ECGSketch.m */,
+				1D3623240D0F684500981E51 /* BluetoothECGAppDelegate.h */,
+				1D3623250D0F684500981E51 /* BluetoothECGAppDelegate.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* BluetoothECG.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				9E250D6C114F3E18005F129A /* CorePlot-CocoaTouch.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				28A0AAE50D9B0CCF005BE974 /* BluetoothECG_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9E250D1D114F1C6C005F129A /* ECGSketch.xib */,
+				9E2ADF801127B743008D6FB6 /* Icon.png */,
+				8D1107310486CEB800E47090 /* BluetoothECG-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E250DBF114F4093005F129A /* QuartzCore.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E250D6D114F3E18005F129A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E250D72114F3E18005F129A /* libCorePlot-CocoaTouch.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E35C4831126358200FEFD06 /* Inquiry */ = {
+			isa = PBXGroup;
+			children = (
+				9E35C4871126363300FEFD06 /* BTDevice.h */,
+				9E35C4881126363300FEFD06 /* BTDevice.m */,
+				9E35C4841126360400FEFD06 /* BTInquiryViewController.h */,
+				9E35C4851126360400FEFD06 /* BTInquiryViewController.m */,
+			);
+			name = Inquiry;
+			sourceTree = "<group>";
+		};
+		9E35C48D1126379800FEFD06 /* btstack */ = {
+			isa = PBXGroup;
+			children = (
+				9E35C7BD11267DC100FEFD06 /* hci_transport_h4.c */,
+				9E35C7BE11267DC100FEFD06 /* hci_transport_h4.h */,
+				9E35C7BF11267DC100FEFD06 /* platform_iphone.c */,
+				9E35C7C011267DC100FEFD06 /* platform_iphone.h */,
+				9E35C7C111267DC100FEFD06 /* SpringBoardAccess.c */,
+				9E35C7C211267DC100FEFD06 /* SpringBoardAccess.h */,
+				9E35C7A911267D4800FEFD06 /* run_loop_cocoa.m */,
+				9E35C7AA11267D4800FEFD06 /* run_loop_posix.c */,
+				9E35C79D11267CA900FEFD06 /* hci_dump.c */,
+				9E35C79E11267CA900FEFD06 /* hci_dump.h */,
+				9E35C79911267C8300FEFD06 /* l2cap_signaling.c */,
+				9E35C79A11267C8300FEFD06 /* l2cap_signaling.h */,
+				9E35C79711267C3000FEFD06 /* config.h */,
+				9E35C79111267C1100FEFD06 /* l2cap.c */,
+				9E35C79211267C1100FEFD06 /* l2cap.h */,
+				9E35C79311267C1100FEFD06 /* socket_connection.c */,
+				9E35C79411267C1100FEFD06 /* socket_connection.h */,
+				9E35C78E11267BD900FEFD06 /* bt_control.h */,
+				9E35C78F11267BD900FEFD06 /* hci_transport.h */,
+				9E35C6AF112677CC00FEFD06 /* btstack.c */,
+				9E35C6EB1126787300FEFD06 /* btstack.h */,
+				9E35C6B1112677CC00FEFD06 /* hci.c */,
+				9E35C6B2112677CC00FEFD06 /* hci.h */,
+				9E35C6B3112677CC00FEFD06 /* hci_cmds.c */,
+				9E35C6EA1126784D00FEFD06 /* hci_cmds.h */,
+				9E35C6E41126782700FEFD06 /* linked_list.h */,
+				9E35C6BF112677CC00FEFD06 /* linked_list.c */,
+				9E35C6E91126783A00FEFD06 /* run_loop.h */,
+				9E35C6C2112677CC00FEFD06 /* run_loop.c */,
+				9E35C6D81126780600FEFD06 /* utils.h */,
+				9E35C6C7112677CC00FEFD06 /* utils.c */,
+			);
+			name = btstack;
+			sourceTree = "<group>";
+		};
+		9EDB4FDE1130C32A006ED6A1 /* rfcomm */ = {
+			isa = PBXGroup;
+			children = (
+				9EDB4FDF1130C32A006ED6A1 /* rfcomm.h */,
+				9EDB4FE21130C32A006ED6A1 /* rfcomm.c */,
+			);
+			name = rfcomm;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* BluetoothECG */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "BluetoothECG" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9E250DB9114F3ED4005F129A /* PBXTargetDependency */,
+			);
+			name = BluetoothECG;
+			productName = BluetoothECG;
+			productReference = 1D6058910D05DD3D006BFB54 /* BluetoothECG.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "BluetoothECG" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9E250D6D114F3E18005F129A /* Products */;
+					ProjectRef = 9E250D6C114F3E18005F129A /* CorePlot-CocoaTouch.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* BluetoothECG */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9E250D72114F3E18005F129A /* libCorePlot-CocoaTouch.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libCorePlot-CocoaTouch.a";
+			remoteRef = 9E250D71114F3E18005F129A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E2ADF811127B743008D6FB6 /* Icon.png in Resources */,
+				9E250D1F114F1C6C005F129A /* ECGSketch.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* BluetoothECGAppDelegate.m in Sources */,
+				9E35C4861126360400FEFD06 /* BTInquiryViewController.m in Sources */,
+				9E35C4891126363300FEFD06 /* BTDevice.m in Sources */,
+				9E35C6C8112677CC00FEFD06 /* btstack.c in Sources */,
+				9E35C6CA112677CC00FEFD06 /* hci.c in Sources */,
+				9E35C6CB112677CC00FEFD06 /* hci_cmds.c in Sources */,
+				9E35C6D1112677CC00FEFD06 /* linked_list.c in Sources */,
+				9E35C6D3112677CC00FEFD06 /* run_loop.c in Sources */,
+				9E35C6D7112677CC00FEFD06 /* utils.c in Sources */,
+				9E35C79511267C1100FEFD06 /* l2cap.c in Sources */,
+				9E35C79611267C1100FEFD06 /* socket_connection.c in Sources */,
+				9E35C79B11267C8300FEFD06 /* l2cap_signaling.c in Sources */,
+				9E35C79F11267CA900FEFD06 /* hci_dump.c in Sources */,
+				9E35C7AB11267D4800FEFD06 /* run_loop_cocoa.m in Sources */,
+				9E35C7AC11267D4800FEFD06 /* run_loop_posix.c in Sources */,
+				9E35C7C411267DC100FEFD06 /* hci_transport_h4.c in Sources */,
+				9E35C7C511267DC100FEFD06 /* platform_iphone.c in Sources */,
+				9E35C7C611267DC100FEFD06 /* SpringBoardAccess.c in Sources */,
+				9EDB4FE31130C32A006ED6A1 /* rfcomm.c in Sources */,
+				9E250D1E114F1C6C005F129A /* ECGSketch.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9E250DB9114F3ED4005F129A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CorePlot-CocoaTouch";
+			targetProxy = 9E250DB8114F3ED4005F129A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BluetoothECG_Prefix.pch;
+				INFOPLIST_FILE = "BluetoothECG-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = BluetoothECG;
+				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = dynamic;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BluetoothECG_Prefix.pch;
+				INFOPLIST_FILE = "BluetoothECG-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = BluetoothECG;
+				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = dynamic;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Quy Pham (P53LYQC38V)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/Users/jasonmac/Documents/core-plot/framework";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "863E5A08-35E4-4696-9780-2B8C36DB8481";
+				SDKROOT = iphoneos3.1.2;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Quy Pham (P53LYQC38V)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/Users/jasonmac/Documents/core-plot/framework";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "863E5A08-35E4-4696-9780-2B8C36DB8481";
+				SDKROOT = iphoneos3.1.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "BluetoothECG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "BluetoothECG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
