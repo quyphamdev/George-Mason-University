@@ -29,8 +29,8 @@ Microcontroller programming class: C and Assembly source code.
 Source code written in VHDL and Assembly to program Xilinx Spartan 3E-100 CP132 using Xilinx ISE.
 
 # ECE 493
-Senior design project: iOS app written for and run on iPhone 3GS for communicating with external custom circuitry via Bluetooth, receiving a person's ECG signal transmitted from the external custom circuitry, and drawing a graph for the ECG signal on the iPhone 3GS's display. 
-Source code written in Objective-C with BTStack integrated. BTStack was an open source Bluetooth stack written by Matthias Ringwald for a jail-breaked iOS.
+Senior design project: iOS app written for and run on iPhone 3GS for communicating with external customizable circuitry via Bluetooth, receiving a person's ECG signal transmitted from the external customizable circuitry, and drawing a graph for the ECG signal in real-time on the iPhone 3GS's display. 
+Source code was written in Objective-C with BTStack integrated. BTStack was an open source Bluetooth stack written by Matthias Ringwald for a jail-breaked iOS. Notes that at the time of this iOS app was written, communication via Bluetooth on iOS was limited to Made-For-iPhone (MFi) program which required approval from Apple and required an authentication chip provided by Apple once approved. Jail-breaking the iOS and using the open source BTStack were the only possible solution at the time due to time constraints. 
 
 
 # Source code uploading in progress...
