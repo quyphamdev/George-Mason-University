@@ -1,0 +1,21 @@
+Enter file name: sample1.txt
+ 12: o
+ 13: oo
+ 14:
+ 15: o
+ 16:
+ 17:
+ 18:
+ 19: oo
+ 20:
+ 21: o
+ 22: oooo
+ 23:
+ 24:
+ 25:
+ 26:
+ 27: oo
+ 28:
+ 29:
+ 30: o
+Press any key to continue . . .
