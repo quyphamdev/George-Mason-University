@@ -49,7 +49,7 @@ int fifo_fd;
 /********************************************
  * START OF UPLOADING PRCEDURES
  * in progress...
- * These were test code. Option to upload ECG data to server were not needed.
+ * These were test code. Option to upload ECG data to server was not needed.
  */
 - (void) uploadData:(char *)data {
 	NSString *encodedData = [[[NSString alloc] initWithCString:data] stringByAddingPercentEscapesUsingEncoding:4];
