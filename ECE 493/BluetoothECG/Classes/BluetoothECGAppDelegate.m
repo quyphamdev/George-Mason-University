@@ -48,9 +48,10 @@ int fifo_fd;
 
 /********************************************
  * START OF UPLOADING PRCEDURES
+ * in progress...
+ * These were test code. Option to upload ECG data to server were not needed.
  */
 - (void) uploadData:(char *)data {
-	// upload ecg data to the server
 	NSString *encodedData = [[[NSString alloc] initWithCString:data] stringByAddingPercentEscapesUsingEncoding:4];
 	NSString *urlStr = [NSString stringWithFormat:@"http://mycodeteacher.com/server/login.php?username=%@",encodedData];
 	NSURLRequest *urlRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:urlStr]];
