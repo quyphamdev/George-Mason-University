@@ -29,6 +29,7 @@ entity SSegCtrl is
 		-- Inputs
 		level         : in    std_logic_vector(7 downto 0);
 		pattern       : in    std_logic_vector(1 downto 0);   -- 00=up, 01=right, 10=bottom, 11=left (delay depends on game difficulty)
+		pattern_en    : in    std_logic;
 		game_state    : in    std_logic_vector(1 downto 0); -- "00" reset, "01" start, "10" game over
 		incorrect     : in    std_logic;  -- user inputted wrong pattern, will stay on for 2 sec
 		correct       : in    std_logic; -- user inputted correct pattern, will stay on for 2 sec		
@@ -176,8 +177,8 @@ begin
                         SSegAN	<= "1011";
                     when SSeg2 => -- display pattern, left seven segment of the two
                         State	<= SSeg3;
-                        if SSegRamPattern(to_integer(unsigned(pattern))) = SSegRamPattern(1) then -- when it's a right pattern, dont display on this sseg
-                           SSegCA(7 downto 1)	<= (others => '1');
+                        if ( SSegRamPattern(to_integer(unsigned(pattern))) = SSegRamPattern(1) ) or pattern_en = '0' then -- when it's a right pattern, dont display on this sseg
+                           SSegCA(7 downto 1)	<= (others => '1'); 
                         else
                            SSegCA(7 downto 1)	<= SSegRamPattern(to_integer(unsigned(pattern)));
                         end if;
@@ -185,8 +186,8 @@ begin
                         SSegAN	<= "1101";
                     when SSeg3 =>   -- display pattern, right seven segment of the two
                         State	<= SSeg0;
-                        if SSegRamPattern(to_integer(unsigned(pattern))) = SSegRamPattern(3) then -- when it's a left pattern, dont display on this sseg
-                           SSegCA(7 downto 1)    <= (others => '1');
+                        if ( SSegRamPattern(to_integer(unsigned(pattern))) = SSegRamPattern(3) ) or pattern_en = '0' then -- when it's a left pattern, dont display on this sseg
+                           SSegCA(7 downto 1)    <= (others => '1');                           
                         else
                            SSegCA(7 downto 1)    <= SSegRamPattern(to_integer(unsigned(pattern)));
                         end if;

@@ -186,6 +186,7 @@ begin
 			reset        => reset,
 			level        => display_level,   -- display when msg_en='0'
 			pattern      => rand_pattern_sseg, -- display when msg_en='0'
+			pattern_en   => rand_pattern_sseg_en,
             game_state  => game_state,  -- current game state
             correct     => passed_a_level, -- user input pattern is correct
             incorrect   => failed_a_level,	
